@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Manrope:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#7f7663",
+                        "primary-container": "#d4af37",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#4d4635",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#735c00",
+                        "secondary-fixed": "#e5e2e1",
+                        "tertiary-container": "#97b0ff",
+                        "tertiary": "#415ba4",
+                        "on-secondary-fixed-variant": "#474746",
+                        "secondary": "#5f5e5e",
+                        "secondary-container": "#e2dfde",
+                        "background": "#fbf9f5",
+                        "on-error": "#ffffff",
+                        "primary": "#735c00",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "inverse-surface": "#30312e",
+                        "on-surface": "#1b1c1a",
+                        "surface-container-low": "#f5f3ef",
+                        "on-tertiary-fixed": "#00174b",
+                        "surface-variant": "#e4e2de",
+                        "tertiary-fixed": "#dbe1ff",
+                        "on-secondary-container": "#636262",
+                        "on-primary": "#ffffff",
+                        "surface": "#fbf9f5",
+                        "surface-container-high": "#eae8e4",
+                        "error": "#ba1a1a",
+                        "surface-container": "#efeeea",
+                        "inverse-primary": "#e9c349",
+                        "surface-container-highest": "#e4e2de",
+                        "inverse-on-surface": "#f2f0ed",
+                        "primary-fixed": "#ffe088",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#241a00",
+                        "surface-dim": "#dbdad6",
+                        "on-tertiary-container": "#254188",
+                        "on-primary-container": "#554300",
+                        "outline-variant": "#d0c5af",
+                        "on-background": "#1b1c1a",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-secondary-fixed": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-header {
+            background: rgba(251, 249, 245, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 glass-header shadow-[0_20px_40px_rgba(27,28,26,0.05)]">
+        <nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-2xl font-bold tracking-tighter text-[#735c00] font-['Noto_Serif']">Celestial Alchemy</div>
+            <div class="hidden md:flex items-center gap-8 font-['Noto_Serif'] text-sm tracking-wide">
+                <a class="text-stone-600 hover:text-[#735c00] transition-all duration-300" href="#">Gemology</a>
+                <a class="text-stone-600 hover:text-[#735c00] transition-all duration-300" href="#">Astrology</a>
+                <a class="text-stone-600 hover:text-[#735c00] transition-all duration-300" href="#">The Lab</a>
+                <a class="text-stone-600 hover:text-[#735c00] transition-all duration-300" href="#">Heritage</a>
+                <a class="text-[#735c00] border-b-2 border-[#d4af37] pb-1" href="#">Heritage</a>
+            </div>
+            <div class="flex items-center gap-6">
+                <span
+                    class="material-symbols-outlined text-[#735c00] cursor-pointer hover:opacity-80 transition-all">science</span>
+                <button
+                    class="bg-primary-container text-on-primary-container px-6 py-2 rounded-xl text-sm font-semibold tracking-wide hover:opacity-90 transition-transform active:scale-95">
+                    Book Now
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="pt-32 pb-20">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-8 mb-32">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-end">
+                <div class="lg:col-span-7">
+                    <span class="font-label text-label-sm uppercase tracking-[0.2em] text-primary mb-6 block">Our
+                        Genesis</span>
+                    <h1 class="font-headline text-[3.5rem] leading-[1.1] font-bold tracking-tight text-on-surface mb-8">
+                        Where the <span class="text-primary italic">Soul of Heritage</span> meets the Precision of
+                        Science.
+                    </h1>
+                    <p class="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                        Celestial Alchemy Laboratory was born from a singular vision: to validate the mystical energy of
+                        gemstones through rigorous, high-spectrum gemological analysis.
+                    </p>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="aspect-[4/5] bg-surface-container-high rounded-lg overflow-hidden relative z-10">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Close-up of a vintage microscope reflecting a brilliant cut sapphire in a clean, brightly lit editorial laboratory setting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWJrioXgL7js4L4CqziTpxkDMnHEKEz_U0pGoLp63_q48mFXI_y6UvUqF0ZomUZck98bu8aWHD4-_Le1sDEDfEjsTnq8aPOhpM1cKfgZygjoLbk9NIbcHbp36fSy8lN4AgnGJ6heODCoseEoevRd50XxKn2v1wSpqL7WZhVFdG9Bwh-w5y0iHs0YpfFLcfSQkCdW1cGPkrjsY5jmBccCj7YP_KmpFa08jTvWwGndyeQN9-u_tKXPaDp9J2BV7765WNBGAS_R2-rO0" />
+                    </div>
+                    <div
+                        class="absolute -bottom-8 -left-8 w-48 h-48 border border-outline-variant/30 rounded-full z-0 opacity-40">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mission Statement: Asymmetric Layout -->
+        <section class="bg-surface-container-low py-32 mb-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                    <div class="relative order-2 lg:order-1">
+                        <div class="bg-white p-4 shadow-xl rotate-[-2deg] max-w-sm ml-auto">
+                            <img class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+                                data-alt="Monochrome editorial portrait of two visionary founders in minimalist linen attire against a textured cream background"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDyFN9NgDxVKYgGtKsE8qFArj7CIJ7Uh35a-WLvFyERHxK6xgsTtMTVa7bQlQhJE27-TxPDGKBIkJB6BMUM7xLr3Mb0RHk9WDOXxSQC394r2wFTzMOdRX70US2WgaO-eB98tlfNN-N3JKSO1uz1CXOIQe27bHune8_ff4Wb9uaYvISuAnm8xuyKmjObI9FTMTylDGxZ3IdYp-YvB6l2S3Kn7GdUe5KwTQa1L7HKhG-YE-HBSXYJ7S-KfaA2loVvhrZzj1oZt-nYJY" />
+                        </div>
+                        <div
+                            class="absolute -top-12 -right-4 text-[10rem] font-headline text-outline-variant/10 select-none">
+                            1924</div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h2 class="font-headline text-headline-md mb-8 text-on-surface">The Alchemical Mission</h2>
+                        <div class="space-y-6">
+                            <p class="font-body text-on-surface-variant leading-loose">
+                                Our mission is to strip away the ambiguity of the gemstone trade. By utilizing advanced
+                                Raman Spectroscopy and chemical fingerprinting, we provide a certificate of "Soul &amp;
+                                Science"—proving not just the purity of the stone, but its celestial alignment.
+                            </p>
+                            <p class="font-body text-on-surface-variant leading-loose">
+                                We believe that true luxury lies in the marriage of the unquantifiable and the absolute.
+                                Every stone that passes through our lab is a testament to this philosophy.
+                            </p>
+                            <div class="pt-8">
+                                <div
+                                    class="flex items-center gap-4 text-primary font-semibold font-label text-sm uppercase tracking-widest">
+                                    <span>Founded on Integrity</span>
+                                    <div class="h-[1px] w-12 bg-primary-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Expertise Bento Grid -->
+        <section class="max-w-7xl mx-auto px-8 mb-32">
+            <div class="text-center mb-20">
+                <h2 class="font-headline text-headline-md mb-4">Laboratory Standards</h2>
+                <div class="h-1 w-20 bg-primary-container mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Large Feature -->
+                <div
+                    class="md:col-span-2 bg-surface-container-lowest p-12 rounded-xl shadow-[0_20px_40px_rgba(27,28,26,0.05)] flex flex-col justify-between">
+                    <div>
+                        <span class="material-symbols-outlined text-primary text-4xl mb-8">magnification_small</span>
+                        <h3 class="font-headline text-2xl mb-4 text-on-surface">Precision Spectroscopy</h3>
+                        <p class="text-on-surface-variant max-w-md">Our laboratory is equipped with the latest
+                            laser-induced breakdown spectroscopy (LIBS) to detect even the most minute trace elements
+                            within a crystal lattice.</p>
+                    </div>
+                    <div class="mt-12 flex gap-4">
+                        <span
+                            class="px-4 py-1 bg-surface-container rounded-full text-[10px] uppercase font-bold tracking-tighter text-outline">Certified
+                            99.9% Accuracy</span>
+                        <span
+                            class="px-4 py-1 bg-surface-container rounded-full text-[10px] uppercase font-bold tracking-tighter text-outline">GIA
+                            Standardized</span>
+                    </div>
+                </div>
+                <!-- Small Feature 1 -->
+                <div
+                    class="bg-primary-container p-8 rounded-xl flex flex-col justify-between text-on-primary-container">
+                    <span class="material-symbols-outlined text-4xl mb-4"
+                        style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                    <div>
+                        <h3 class="font-headline text-xl mb-2">Heritage Grading</h3>
+                        <p class="text-sm opacity-90">Beyond physical specs, we evaluate historical provenance and
+                            energetic frequency.</p>
+                    </div>
+                </div>
+                <!-- Small Feature 2 -->
+                <div class="bg-surface-container-highest p-8 rounded-xl">
+                    <span class="material-symbols-outlined text-primary text-3xl mb-4">history_edu</span>
+                    <h3 class="font-headline text-xl mb-2 text-on-surface">The Ledger</h3>
+                    <p class="text-sm text-on-surface-variant">Permanent digital records for every stone tested, secured
+                        via private ledger.</p>
+                </div>
+                <!-- Medium Feature -->
+                <div class="md:col-span-2 relative h-80 rounded-xl overflow-hidden group">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Interior of a ultra-modern white laboratory with gold accents and high-end scientific equipment illuminated by natural light"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEywHZwMLhgVn4AHhVFh6GQMZ6dmMWPjWbT0eNVvY65UzsOgPcQFsSYOoMN2wX6wsrSB_XLv5tPcG06WivJlvTT0hA7wMYfCvUG1xCjpprIi__nXFN3sMRf59Gu8dGbsj9b6m_rphG1mkWiWpo6zdGWnQksu3YEubWPbKc9zK_PplCWnQUcVXguE0IO7xY2hgZUdFN1VQ9XT-mY8vfc-a-6dk_L4PfuDEjntJc7IazsisCh8NtYtQbmnYXmhidxhDfSa3PTOMQPeQ" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex items-end p-8">
+                        <h3 class="font-headline text-2xl text-white">Ethical Sourcing Validation</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Trust Factors / Stats -->
+        <section
+            class="max-w-7xl mx-auto px-8 grid grid-cols-2 lg:grid-cols-4 gap-12 py-20 border-y border-outline-variant/20">
+            <div class="text-center">
+                <div class="font-headline text-4xl font-bold text-primary mb-2">15k+</div>
+                <div class="font-label text-xs uppercase tracking-widest text-outline">Stones Certified</div>
+            </div>
+            <div class="text-center">
+                <div class="font-headline text-4xl font-bold text-primary mb-2">0.02%</div>
+                <div class="font-label text-xs uppercase tracking-widest text-outline">Variance Margin</div>
+            </div>
+            <div class="text-center">
+                <div class="font-headline text-4xl font-bold text-primary mb-2">85</div>
+                <div class="font-label text-xs uppercase tracking-widest text-outline">Master Gemologists</div>
+            </div>
+            <div class="text-center">
+                <div class="font-headline text-4xl font-bold text-primary mb-2">24/7</div>
+                <div class="font-label text-xs uppercase tracking-widest text-outline">Support Access</div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full mt-20 border-t border-[#d0c5af]/20 bg-[#fbf9f5]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+            <div>
+                <div class="text-lg font-semibold text-stone-800 mb-6">Celestial Alchemy</div>
+                <p class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-stone-500 leading-relaxed">
+                    Bridging the gap between empirical truth and spiritual resonance since our inception.
+                </p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-[#735c00] font-bold">Quick Links
+                </div>
+                <nav class="flex flex-col gap-3">
+                    <a class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-[#735c00] transition-colors"
+                        href="#">Privacy Policy</a>
+                    <a class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-[#735c00] transition-colors"
+                        href="#">Terms of Service</a>
+                    <a class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-[#735c00] transition-colors"
+                        href="#">Laboratory Standards</a>
+                </nav>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-[#735c00] font-bold">Connect</div>
+                <p class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-stone-500 mb-4">
+                    Inquiries@celestialalchemy.lab</p>
+                <div class="flex gap-4">
+                    <span
+                        class="material-symbols-outlined text-stone-400 hover:text-[#735c00] cursor-pointer">share</span>
+                    <span
+                        class="material-symbols-outlined text-stone-400 hover:text-[#735c00] cursor-pointer">mail</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-12 pb-12">
+            <p class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-stone-500 opacity-70">
+                © 2024 Celestial Alchemy Laboratory. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

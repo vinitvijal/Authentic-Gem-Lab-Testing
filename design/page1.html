@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Celestial Alchemy | Certified Gem Testing &amp; Astrology</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Manrope:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#7f7663",
+                        "primary-container": "#d4af37",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#4d4635",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#735c00",
+                        "secondary-fixed": "#e5e2e1",
+                        "tertiary-container": "#97b0ff",
+                        "tertiary": "#415ba4",
+                        "on-secondary-fixed-variant": "#474746",
+                        "secondary": "#5f5e5e",
+                        "secondary-container": "#e2dfde",
+                        "background": "#fbf9f5",
+                        "on-error": "#ffffff",
+                        "primary": "#735c00",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "inverse-surface": "#30312e",
+                        "on-surface": "#1b1c1a",
+                        "surface-container-low": "#f5f3ef",
+                        "on-tertiary-fixed": "#00174b",
+                        "surface-variant": "#e4e2de",
+                        "tertiary-fixed": "#dbe1ff",
+                        "on-secondary-container": "#636262",
+                        "on-primary": "#ffffff",
+                        "surface": "#fbf9f5",
+                        "surface-container-high": "#eae8e4",
+                        "error": "#ba1a1a",
+                        "surface-container": "#efeeea",
+                        "inverse-primary": "#e9c349",
+                        "surface-container-highest": "#e4e2de",
+                        "inverse-on-surface": "#f2f0ed",
+                        "primary-fixed": "#ffe088",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#241a00",
+                        "surface-dim": "#dbdad6",
+                        "on-tertiary-container": "#254188",
+                        "on-primary-container": "#554300",
+                        "outline-variant": "#d0c5af",
+                        "on-background": "#1b1c1a",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-secondary-fixed": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-nav {
+            background: rgba(251, 249, 245, 0.8);
+            backdrop-filter: blur(20px);
+        }
+
+        .alchemical-mandala {
+            background-image: radial-gradient(circle at center, transparent 0%, transparent 100%),
+                repeating-concentric-circle(circle at center, #d0c5af 0, #d0c5af 1px, transparent 1px, transparent 40px);
+            opacity: 0.05;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_20px_40px_rgba(27,28,26,0.05)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-2xl font-bold tracking-tighter text-[#735c00] font-headline">Celestial Alchemy</div>
+            <div class="hidden md:flex items-center gap-8 font-headline text-sm tracking-wide">
+                <a class="text-[#735c00] border-b-2 border-[#d4af37] pb-1" href="#">Gemology</a>
+                <a class="text-stone-600 hover:text-[#735c00] transition-all duration-300" href="#">Astrology</a>
+                <a class="text-stone-600 hover:text-[#735c00] transition-all duration-300" href="#">The Lab</a>
+                <a class="text-stone-600 hover:text-[#735c00] transition-all duration-300" href="#">Heritage</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-all"
+                    data-icon="science">science</span>
+                <button
+                    class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-label text-xs uppercase tracking-widest font-semibold hover:opacity-90 active:scale-95 transition-all">
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-24 overflow-hidden">
+        <!-- Hero Section -->
+        <section class="relative px-8 py-20 lg:py-32 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div class="absolute inset-0 alchemical-mandala pointer-events-none -z-10"></div>
+            <div class="flex-1 space-y-8 z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/20">
+                    <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+                    <span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-outline">Excellence in
+                        Alchemical Arts</span>
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-headline font-bold text-on-surface leading-[1.1] tracking-tight">
+                    Certified Gem <br />
+                    <span class="text-primary italic font-normal">Testing &amp; Astrology</span> <br />
+                    Solutions
+                </h1>
+                <p class="text-lg text-secondary max-w-xl font-body leading-relaxed">
+                    Where empirical laboratory precision meets ancient celestial wisdom. We provide definitive analysis
+                    for your most precious assets and life’s most profound questions.
+                </p>
+                <div class="flex flex-wrap gap-6 pt-4">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+                        <span class="text-xs font-label font-bold uppercase tracking-wider">100% Tested</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary" data-icon="biotech">biotech</span>
+                        <span class="text-xs font-label font-bold uppercase tracking-wider">Lab Verified</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary"
+                            data-icon="auto_awesome">auto_awesome</span>
+                        <span class="text-xs font-label font-bold uppercase tracking-wider">Astrology Guided</span>
+                    </div>
+                </div>
+                <div class="pt-8">
+                    <button
+                        class="group relative px-10 py-5 bg-primary text-white rounded-xl font-headline font-semibold text-lg overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
+                        <span class="relative z-10">Book Your Analysis</span>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-primary to-primary-container opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div
+                    class="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-700">
+                    <img class="w-full h-full object-cover"
+                        data-alt="high-end close-up of a raw diamond being inspected with a professional magnifying loupe under clinical laboratory lighting"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeMpQIll74JNTRd9ykbncybHTwz5IfqXyTPmT_uNhkFvC-wn6pGvuVi9KduqvwzB9Zftd2pi5QTKUouxMnTrZedpjBXHwjgSbg_HqgMvCNKAlCqrGg00UF51WzYzrrUJzj63fEqKXaGTYTLV5jDZWVuOj174frTp0zBqScDSSdP0eq3-wB-nUIJB5JDNg5RJiow99hRilydtHOlmpsi-Z7EqgWzwxegptLUP8n6zR20_oDJYsduZB6gnhCFRP9d7VaT2wUbUCizDM" />
+                </div>
+                <!-- Floating Decorative Element -->
+                <div
+                    class="absolute -bottom-10 -left-10 bg-white p-8 rounded-2xl shadow-xl border border-outline-variant/10 max-w-[240px] transform -rotate-6 hidden md:block">
+                    <div class="flex flex-col gap-4">
+                        <div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary text-3xl"
+                                data-icon="brightness_7">brightness_7</span>
+                        </div>
+                        <p class="text-sm font-headline italic">"Every stone carries a celestial imprint waiting to be
+                            decrypted."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section: Asymmetric Bento Grid -->
+        <section class="py-24 px-8 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                    <div class="max-w-2xl">
+                        <h2 class="text-4xl font-headline font-semibold mb-6">Our Core Specialties</h2>
+                        <p class="text-secondary">Precision testing methodologies integrated with astrological
+                            compatibility for unparalleled accuracy.</p>
+                    </div>
+                    <div class="text-right">
+                        <span
+                            class="text-[10px] font-label font-bold uppercase tracking-[0.3em] text-primary">Laboratory
+                            Standards</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                    <!-- Gold Testing -->
+                    <div
+                        class="md:col-span-8 bg-surface-container-lowest p-10 rounded-[2.5rem] shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="flex flex-col lg:flex-row gap-12">
+                            <div class="flex-1 space-y-6">
+                                <span class="material-symbols-outlined text-5xl text-primary-container"
+                                    data-icon="vaping_rooms"
+                                    style="font-variation-settings: 'FILL' 1;">vaping_rooms</span>
+                                <h3 class="text-2xl font-headline font-bold">Aurum Analysis</h3>
+                                <p class="text-sm leading-relaxed text-secondary">Advanced XRF spectrometry to determine
+                                    purity with 99.9% accuracy. We provide certified hallmark verification for all gold
+                                    formats.</p>
+                                <ul class="space-y-3 pt-4">
+                                    <li
+                                        class="flex items-center gap-3 text-xs font-label uppercase tracking-widest text-outline">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Hallmark
+                                        Certification
+                                    </li>
+                                    <li
+                                        class="flex items-center gap-3 text-xs font-label uppercase tracking-widest text-outline">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Purity
+                                        Verification
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-1 rounded-3xl overflow-hidden aspect-video lg:aspect-auto">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    data-alt="luxury gold bars stacked neatly on a white surface with warm soft focus golden reflections and clean clinical background"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6QJImibVarRNcYE0dl3D3ViBeuDH-vM_CmUjh6Ylf3wLgcGejKhtmqNlh2HnyaT41MFeZQpIhaSWj5rR8mshmlPqhkRaTYwYltKNL4yBIxJoE73Ee9rUdzq3YpQdk8f9NAaI9wgKOzA4EM8vxBMVIAOaXqoxH3xIaP7EHHS4gab4KQ972mfJB78uKEcXYyph0301TaBMZWmFwXGOlH9vvgKpt9kn8qpakV170PrYf6IAkt--q2Qno95LgQ8LxUPodEYFgHidulF8" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Silver Testing -->
+                    <div
+                        class="md:col-span-4 bg-surface-container-lowest p-10 rounded-[2.5rem] shadow-sm flex flex-col justify-between group">
+                        <div class="space-y-6">
+                            <div
+                                class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center text-secondary">
+                                <span class="material-symbols-outlined text-3xl" data-icon="blur_on">blur_on</span>
+                            </div>
+                            <h3 class="text-2xl font-headline font-bold text-on-surface">Lunar Silver Verification</h3>
+                            <p class="text-sm text-secondary">Testing for Sterling (925) standards using acid and
+                                electronic methods.</p>
+                        </div>
+                        <div class="mt-10 rounded-2xl overflow-hidden h-48">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                data-alt="antique silver ornaments with intricate textures in soft morning light showing metallic luster and fine details"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUw5YtWMNLhCHdZaVF3fADExo6wmkpC_V7srHM5ws2LInt2sgDifJb21ko-hzgxU2X3F2AgjDLfNDPX2V-wV26moUHNqgb6YVviEMlOM8U4DqhXAH6YU82Kms3VqoGYgJVsYeec42icGZBT-sghaHBzthGxwDwafInWMc0583OU3d-i8XCsXwQLQO9MefvqE28BhKrNu9Am4CGXOgAL6XKH5dlv0_xFY6K0hzZ2Pyuo-5obJ-BiQevI6MwUi6hZw-Q7gOtSknZ7jc" />
+                        </div>
+                    </div>
+                    <!-- Diamond -->
+                    <div
+                        class="md:col-span-4 bg-surface-container-lowest p-10 rounded-[2.5rem] shadow-sm flex flex-col justify-between group">
+                        <div class="space-y-6">
+                            <div
+                                class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-3xl" data-icon="diamond"
+                                    style="font-variation-settings: 'FILL' 1;">diamond</span>
+                            </div>
+                            <h3 class="text-2xl font-headline font-bold text-on-surface">Diamond Grading</h3>
+                            <p class="text-sm text-secondary">Full 4C evaluation and laboratory origin verification.</p>
+                        </div>
+                        <div class="mt-10 rounded-2xl overflow-hidden h-48">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                data-alt="a brilliant cut diamond held in metal tweezers reflecting spectrums of light against a dark velvety background"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzVESq-pCl3YLMX2o1c8VPc2lr8TgdkmCHr-Cnucqq4KpdI-t6l3v_LCAuhbPwN8ie0xWVTKAog1aAXILDS7MOD8iIGts4sulYWOGDozMtNbImzZzz449MB-RRhQIZwStJ7vIXNHVxPJ6OSgbJ5EmUOckrEa4dgoVnnfe3yVexLB7r1g0szJuasJaU6Vv__TDZR0EfT6AOjW13rJa-NskngAvkFo1ngBkLGzQtn7Jhgg9Y84VMntMLDKaab253DDX1xnZx13kq9CA" />
+                        </div>
+                    </div>
+                    <!-- Gemstones -->
+                    <div
+                        class="md:col-span-8 bg-primary text-white p-10 rounded-[2.5rem] shadow-sm relative overflow-hidden group">
+                        <div class="relative z-10 h-full flex flex-col justify-between">
+                            <div class="max-w-md space-y-6">
+                                <h3 class="text-3xl font-headline font-bold">Colored Gemstones &amp; Vedic Alignment
+                                </h3>
+                                <p class="opacity-80 text-sm leading-relaxed">Identifying heat treatments, origin, and
+                                    specific chemical compositions to ensure your gemstone aligns with your astrological
+                                    chart.</p>
+                                <button
+                                    class="mt-4 px-6 py-3 border border-white/30 rounded-full text-xs font-label font-bold uppercase tracking-widest hover:bg-white hover:text-primary transition-colors">
+                                    Explore Lab Methodology
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute right-0 bottom-0 top-0 w-1/2 opacity-40 group-hover:opacity-60 transition-opacity">
+                            <img class="w-full h-full object-cover"
+                                data-alt="a collection of raw multi-colored gemstones including emeralds and sapphires on a clean laboratory tray"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTZTLY3hDqVj1ImxKmm1WIK444jDLXUH8172p8VpFFWBL2EMBNlr-bC1j5cSk2Jhru1GeBFsziXATK7VZbJF7lebOjmUtCVi_1HcjQgTs_Il2-qJtPT825ysP060vR5yzLN2AKPViscsA1Ss75iRWumGX58iiA657Y7GxSmoxvNHhBkLk8CWDUyx0qvkNEAes9NL2k7VvhFocLWFCrgv5h4AUE_Cxut0Gd-Wl5rFqmQ4WuTZOPY47M8RZJtJFJYcOP9vWQZMQIg_w" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="py-24 px-8 max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-headline font-semibold mb-4">Laboratory Testimonials</h2>
+                <div class="w-24 h-1 bg-primary-container mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Testimonial 1 -->
+                <div class="space-y-6 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full border-2 border-primary-container p-1 overflow-hidden">
+                        <img class="w-full h-full object-cover rounded-full"
+                            data-alt="portrait of a mature gentleman in a professional setting with a warm sincere smile and soft natural lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqvOPQhPNzhjvieE_CFqDlCln1Suv2-UarSIqDjJ_7bN6c6QN7GC4N4cjJK_MBcIJJX5zIiIVblnt95W6NUDEbKTBZnXxqwFxHWkgS4RjpLIaUU5NuK_jXoJkKX4jrVm6bv3CpzifjQyawQVuv8oUVS6I1ir4EQpv0vrURTKSvoLVylQLc9dxz2vXAM9stnl6UQl9itHcWzK-49l8j635tT166142bWupILszY6k_68FBTqrYDI4hWxG2YqofwJF7TEmo2Pr4Evxg" />
+                    </div>
+                    <div class="text-primary flex gap-1">
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-secondary italic font-body">"The level of detail in the certificate was astonishing.
+                        I finally understood the energetic properties of my heirloom sapphire."</p>
+                    <div>
+                        <h4 class="font-headline font-bold text-on-surface">Vikram Mehta</h4>
+                        <p class="text-[10px] font-label uppercase tracking-widest text-outline">Private Collector</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="space-y-6 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full border-2 border-primary-container p-1 overflow-hidden">
+                        <img class="w-full h-full object-cover rounded-full"
+                            data-alt="smiling elegant woman in business attire looking towards camera with blurred office plants in the background"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZIh_8ReMWR0ffNkosM7gXCig4PZGLokUOyxjQrIBfdKoixinTUB80Xh4APzuM5Vc7PoT2gjnR_e2eyteHipW5UqAX3wc5b5TVWSP3tbGSb0kwUEZ5pPycaOquwFNpJwG52hk3_dnBXDvRhdgxyAu_HWU-mJCuXUsi--knJj_uXMPZWgct5P46zwV1mjpU91tQfShJGkap2DFe1o2llFfzPBw-BP3vePHty8BC5ZXRvE_mHPeFVNOAYN_fqYV-DPfwn-5MqkOaJxo" />
+                    </div>
+                    <div class="text-primary flex gap-1">
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-secondary italic font-body">"Unmatched integrity. Their testing of my gold jewelry
+                        collection gave me complete peace of mind before the appraisal."</p>
+                    <div>
+                        <h4 class="font-headline font-bold text-on-surface">Priya Sharma</h4>
+                        <p class="text-[10px] font-label uppercase tracking-widest text-outline">Jewelry Artisan</p>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="space-y-6 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full border-2 border-primary-container p-1 overflow-hidden">
+                        <img class="w-full h-full object-cover rounded-full"
+                            data-alt="middle-aged man with kind expression wearing a formal suit in high-end editorial lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwzhIxrTPMn9SJfINLt-506h0_eIzCB6O5u6ySwILuBNGHCKvTkTErd4irw1C5-0xsDzM5TetrCH3zTpUCk_yawqGrN9_wNIGLHpodJtPAVbg5X0r9-ItxncaEelxdqnrdgvGcgVWfd7vTWT4rb8Qipbf9XIE7pGyBxNgFwGeQne9E6MMVuUiWffafMbbs3XSxiJYxVi-VjtbqPCJelXMcEueZdDhBxNA3hxP8EpNK4Hb2gVQgIQ6xppKwq5H9HmuOxuPB118HWbg" />
+                    </div>
+                    <div class="text-primary flex gap-1">
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="star"
+                            style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-secondary italic font-body">"A unique blend of science and spirit. Their
+                        astrology-guided gemstone recommendations changed my life's trajectory."</p>
+                    <div>
+                        <h4 class="font-headline font-bold text-on-surface">Dr. Anirudh Rao</h4>
+                        <p class="text-[10px] font-label uppercase tracking-widest text-outline">Gemology Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-24 px-8">
+            <div
+                class="max-w-5xl mx-auto bg-surface-container shadow-[0_20px_40px_rgba(27,28,26,0.05)] rounded-[3rem] p-12 lg:p-20 text-center relative overflow-hidden">
+                <div class="absolute inset-0 alchemical-mandala opacity-10"></div>
+                <div class="relative z-10">
+                    <h2 class="text-4xl lg:text-5xl font-headline font-bold mb-8">Begin Your Journey of Discovery</h2>
+                    <p class="text-lg text-secondary max-w-2xl mx-auto mb-12">Whether you seek chemical purity or
+                        celestial clarity, our laboratory is ready to reveal the truth within.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-6">
+                        <button
+                            class="bg-primary text-white px-12 py-5 rounded-xl font-headline font-bold text-lg hover:bg-primary-container hover:text-on-primary-container transition-all shadow-lg">Book
+                            Your Analysis</button>
+                        <button
+                            class="bg-white border border-outline-variant text-primary px-12 py-5 rounded-xl font-headline font-bold text-lg hover:bg-surface-container-low transition-all">View
+                            Our Standards</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full mt-20 border-t border-[#d0c5af]/20 bg-[#fbf9f5]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+            <div class="space-y-6">
+                <div class="text-lg font-semibold text-stone-800">Celestial Alchemy Laboratory</div>
+                <p class="text-stone-500 font-body text-sm leading-relaxed">
+                    Pioneering the synthesis of chemical analysis and metaphysical study for over three decades.
+                </p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-[#735c00] font-label text-xs uppercase tracking-[0.2em] font-bold">Quick Links</h5>
+                <nav class="flex flex-col gap-2 font-label text-xs uppercase tracking-[0.1em]">
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Terms of Service</a>
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Laboratory Standards</a>
+                </nav>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-[#735c00] font-label text-xs uppercase tracking-[0.2em] font-bold">Connect With Us</h5>
+                <nav class="flex flex-col gap-2 font-label text-xs uppercase tracking-[0.1em]">
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Testing Methodology</a>
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Contact Us</a>
+                </nav>
+                <div class="pt-4 flex gap-4">
+                    <span
+                        class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors"
+                        data-icon="mail">mail</span>
+                    <span
+                        class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors"
+                        data-icon="location_on">location_on</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-12 py-8 border-t border-outline-variant/10">
+            <p class="text-stone-500 font-label text-[10px] uppercase tracking-[0.1em] text-center">
+                © 2024 Celestial Alchemy Laboratory. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

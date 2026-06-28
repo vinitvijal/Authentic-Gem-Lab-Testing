@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Celestial Alchemy | Diamond Testing Laboratory</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#7f7663",
+                        "primary-container": "#d4af37",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#4d4635",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#735c00",
+                        "secondary-fixed": "#e5e2e1",
+                        "tertiary-container": "#97b0ff",
+                        "tertiary": "#415ba4",
+                        "on-secondary-fixed-variant": "#474746",
+                        "secondary": "#5f5e5e",
+                        "secondary-container": "#e2dfde",
+                        "background": "#fbf9f5",
+                        "on-error": "#ffffff",
+                        "primary": "#735c00",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "inverse-surface": "#30312e",
+                        "on-surface": "#1b1c1a",
+                        "surface-container-low": "#f5f3ef",
+                        "on-tertiary-fixed": "#00174b",
+                        "surface-variant": "#e4e2de",
+                        "tertiary-fixed": "#dbe1ff",
+                        "on-secondary-container": "#636262",
+                        "on-primary": "#ffffff",
+                        "surface": "#fbf9f5",
+                        "surface-container-high": "#eae8e4",
+                        "error": "#ba1a1a",
+                        "surface-container": "#efeeea",
+                        "inverse-primary": "#e9c349",
+                        "surface-container-highest": "#e4e2de",
+                        "inverse-on-surface": "#f2f0ed",
+                        "primary-fixed": "#ffe088",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#241a00",
+                        "surface-dim": "#dbdad6",
+                        "on-tertiary-container": "#254188",
+                        "on-primary-container": "#554300",
+                        "outline-variant": "#d0c5af",
+                        "on-background": "#1b1c1a",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-secondary-fixed": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-primary-container/30">
+    <!-- Top Navigation Bar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-md shadow-[0_20px_40px_rgba(27,28,26,0.05)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-2xl font-bold tracking-tighter text-[#735c00] dark:text-[#d4af37] font-['Noto_Serif']">
+                Celestial Alchemy</div>
+            <div class="hidden md:flex items-center space-x-8 font-['Noto_Serif'] text-sm tracking-wide">
+                <a class="text-[#735c00] dark:text-[#d4af37] border-b-2 border-[#d4af37] pb-1" href="#">Gemology</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-[#735c00] transition-all duration-300"
+                    href="#">Astrology</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-[#735c00] transition-all duration-300"
+                    href="#">The Lab</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-[#735c00] transition-all duration-300"
+                    href="#">Heritage</a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <span
+                    class="material-symbols-outlined text-[#735c00] dark:text-[#d4af37] cursor-pointer hover:opacity-80 transition-all duration-300"
+                    data-icon="science">science</span>
+                <button
+                    class="bg-primary-container text-on-primary-container px-6 py-2 rounded-xl text-sm font-semibold tracking-wide hover:opacity-90 transition-all duration-300 active:scale-95">Book
+                    Now</button>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative px-8 py-20 lg:py-32 overflow-hidden max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="z-10">
+                    <span class="label-sm text-primary uppercase tracking-[0.2em] font-semibold mb-4 block">Molecular
+                        Verification</span>
+                    <h1 class="text-5xl lg:text-7xl font-headline font-bold text-on-surface leading-[1.1] mb-8">The
+                        Alchemy of Authenticity</h1>
+                    <p class="text-lg text-secondary mb-10 max-w-lg leading-relaxed">Through thermal conductivity and
+                        spectroscopic analysis, we reveal the soul of every stone. Precision testing that distinguishes
+                        legacy from the laboratory.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold tracking-wide shadow-lg hover:translate-y-[-2px] transition-all duration-300">Verify
+                            Your Diamond</button>
+                        <button
+                            class="border border-outline-variant/30 text-primary px-8 py-4 rounded-xl font-bold tracking-wide hover:bg-surface-container-low transition-all duration-300">View
+                            Sample Certificate</button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-20 -right-20 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl">
+                    </div>
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-2xl transform lg:rotate-2 hover:rotate-0 transition-transform duration-700">
+                        <img alt="Diamond authentication" class="w-full h-[600px] object-cover"
+                            data-alt="Close-up of a brilliant cut diamond held in jeweler tweezers under laboratory lighting with soft gold bokeh highlights"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf0B2Vr5a5stlYnkpvGl_nb96T4zNK7ekyCEM7Bws28SXssXQp_kjbyYIPfvaeb8wYIGt6KTf_AdqfrNTLhn63zgpxl82xJbzjCAkEiRa38MUz2L9MIdJrsmnOmh-LJIB8g1bcA1IIcQshHkZ-uNZ7fXm_n8LYBcFCdGD5QW4R6-rbsboKAOpYoqtU-72r5pR4vnC0dQqh_O74S0oFEuvJxKgSBKrNjRrjZoUQaxwEQLoJEKNbgAWooL3xrLDR6CY-Koj4KPXj1o8" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Distinction Grid -->
+        <section class="bg-surface-container-low py-24 px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20">
+                    <h2 class="text-3xl lg:text-5xl font-headline font-bold mb-6">Real vs Lab-Grown Distinction</h2>
+                    <p class="text-secondary max-w-2xl mx-auto">While chemically identical, the origin story of a
+                        diamond is written in its atomic lattice. Our advanced tools decode these microscopic chapters.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Thermal Card -->
+                    <div
+                        class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all">
+                        <div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mb-8">
+                            <span class="material-symbols-outlined text-primary"
+                                data-icon="device_thermostat">device_thermostat</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-semibold mb-4 text-on-surface">Thermal Conductivity</h3>
+                        <p class="text-secondary text-sm leading-relaxed mb-6">Diamonds are the world's most efficient
+                            heat conductors. We measure thermal displacement to confirm crystal integrity.</p>
+                        <span class="text-[10px] uppercase tracking-widest font-bold text-primary">Precision Level
+                            0.001λ</span>
+                    </div>
+                    <!-- Spectroscopic Card -->
+                    <div
+                        class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all md:mt-12">
+                        <div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mb-8">
+                            <span class="material-symbols-outlined text-primary"
+                                data-icon="light_mode">light_mode</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-semibold mb-4 text-on-surface">UV Fluorescence</h3>
+                        <p class="text-secondary text-sm leading-relaxed mb-6">Observation under varying light spectrums
+                            reveals growth patterns unique to natural high-pressure environments.</p>
+                        <span class="text-[10px] uppercase tracking-widest font-bold text-primary">Spectral
+                            Analysis</span>
+                    </div>
+                    <!-- Microscopic Card -->
+                    <div
+                        class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all">
+                        <div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mb-8">
+                            <span class="material-symbols-outlined text-primary" data-icon="biotech">biotech</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-semibold mb-4 text-on-surface">Inclusion Mapping</h3>
+                        <p class="text-secondary text-sm leading-relaxed mb-6">We map internal 'birthmarks' to identify
+                            the geological era and pressure conditions of formation.</p>
+                        <span class="text-[10px] uppercase tracking-widest font-bold text-primary">Atomic Clarity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Certification Importance (Asymmetric Layout) -->
+        <section class="py-32 px-8 max-w-7xl mx-auto overflow-hidden">
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <div class="w-full lg:w-1/2 relative order-2 lg:order-1">
+                    <div class="relative z-10 border-[12px] border-white shadow-2xl">
+                        <img alt="Certification process"
+                            class="w-full grayscale hover:grayscale-0 transition-all duration-1000"
+                            data-alt="Professional laboratory setting with a certified gemologist examining a gemstone under a microscope with luxury parchment paperwork"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBITJqgGR_cXP3HhyOaJvVZ6dt5DsNoCQmfUBa_TTq00cy_6GJBdyQo9HqRINV2BJqi1qplh-LHoexjr32gDuCOLXu8CV98KSu3d3ragFnXaS4TVe-06MAkjP-AwBKzsNDNu5PXGE1TZPEPUWU4-BVESi-Gjs7UgLfPlK8bFJ6_D1dPKa3owFaT4HaQlOj4IQNLDxA9nUwRygpoDaQcA6woADuuThcOSZfLHUJVJeyfPUX34R9YzbpOSdM4vII4j50Qf63d6c38ArU" />
+                    </div>
+                    <div class="absolute -bottom-10 -left-10 bg-primary-container p-8 z-20 hidden md:block">
+                        <p class="font-headline text-on-primary-container text-2xl font-bold italic">"Trust is the
+                            hardest mineral."</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                    <span class="label-sm text-primary uppercase tracking-[0.2em] font-semibold mb-4 block">The Ledger
+                        of Value</span>
+                    <h2 class="text-4xl font-headline font-bold mb-8">Why Certification Matters</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="shrink-0 mt-1">
+                                <span class="material-symbols-outlined text-primary-container" data-icon="verified_user"
+                                    style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Investment Security</h4>
+                                <p class="text-secondary text-sm">A laboratory-backed certificate ensures that your
+                                    asset retains its global resale value across all major exchanges.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="shrink-0 mt-1">
+                                <span class="material-symbols-outlined text-primary-container" data-icon="gavel"
+                                    style="font-variation-settings: 'FILL' 1;">gavel</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Legal Provenance</h4>
+                                <p class="text-secondary text-sm">Every certificate contains a unique laser-inscribed
+                                    identifier that matches the physical diamond, protecting against theft or swap.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="shrink-0 mt-1">
+                                <span class="material-symbols-outlined text-primary-container" data-icon="history_edu"
+                                    style="font-variation-settings: 'FILL' 1;">history_edu</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Ethical Verification</h4>
+                                <p class="text-secondary text-sm">We trace the ethical footprint of each stone, ensuring
+                                    your diamond is free from conflict and sourced with integrity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Canvas -->
+        <section class="mx-8 mb-24">
+            <div class="max-w-5xl mx-auto rounded-3xl bg-[#735c00] p-12 lg:p-20 text-center relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10"
+                    style="background-image: radial-gradient(circle at 2px 2px, #fff 1px, transparent 0); background-size: 24px 24px;">
+                </div>
+                <div class="relative z-10">
+                    <h2 class="text-3xl lg:text-5xl font-headline text-white mb-8">Begin Your Laboratory Analysis</h2>
+                    <p class="text-primary-fixed/80 max-w-xl mx-auto mb-12 text-lg">Secure your diamond's legacy with
+                        the industry's most rigorous testing standards. Appointments available in London, Mumbai, and
+                        New York.</p>
+                    <button
+                        class="bg-white text-[#735c00] px-10 py-5 rounded-full font-bold text-lg hover:bg-primary-container hover:text-white transition-all transform hover:scale-105">Book
+                        a Consultation</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#fbf9f5] dark:bg-stone-950 w-full mt-20 border-t border-[#d0c5af]/20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+            <div class="space-y-6">
+                <div class="text-lg font-semibold text-stone-800 dark:text-stone-200">Celestial Alchemy Laboratory</div>
+                <p class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-stone-500">Bridging the gap between
+                    ancient heritage and modern scientific precision.</p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-['Manrope'] text-xs uppercase tracking-[0.2em] font-bold text-[#735c00]">Laboratory
+                    Services</h4>
+                <nav class="flex flex-col space-y-2 font-['Manrope'] text-xs uppercase tracking-[0.1em]">
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Laboratory Standards</a>
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Testing Methodology</a>
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Certification Search</a>
+                </nav>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-['Manrope'] text-xs uppercase tracking-[0.2em] font-bold text-[#735c00]">Global Support
+                </h4>
+                <nav class="flex flex-col space-y-2 font-['Manrope'] text-xs uppercase tracking-[0.1em]">
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Contact Us</a>
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-stone-500 hover:text-[#735c00] transition-colors" href="#">Terms of Service</a>
+                </nav>
+            </div>
+        </div>
+        <div class="border-t border-[#d0c5af]/10 py-8 text-center">
+            <p class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-stone-500">© 2024 Celestial Alchemy
+                Laboratory. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

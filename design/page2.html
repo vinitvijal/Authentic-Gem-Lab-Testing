@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Silver Testing | Celestial Alchemy Laboratory</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#7f7663",
+                        "primary-container": "#d4af37",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#4d4635",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#735c00",
+                        "secondary-fixed": "#e5e2e1",
+                        "tertiary-container": "#97b0ff",
+                        "tertiary": "#415ba4",
+                        "on-secondary-fixed-variant": "#474746",
+                        "secondary": "#5f5e5e",
+                        "secondary-container": "#e2dfde",
+                        "background": "#fbf9f5",
+                        "on-error": "#ffffff",
+                        "primary": "#735c00",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "inverse-surface": "#30312e",
+                        "on-surface": "#1b1c1a",
+                        "surface-container-low": "#f5f3ef",
+                        "on-tertiary-fixed": "#00174b",
+                        "surface-variant": "#e4e2de",
+                        "tertiary-fixed": "#dbe1ff",
+                        "on-secondary-container": "#636262",
+                        "on-primary": "#ffffff",
+                        "surface": "#fbf9f5",
+                        "surface-container-high": "#eae8e4",
+                        "error": "#ba1a1a",
+                        "surface-container": "#efeeea",
+                        "inverse-primary": "#e9c349",
+                        "surface-container-highest": "#e4e2de",
+                        "inverse-on-surface": "#f2f0ed",
+                        "primary-fixed": "#ffe088",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#241a00",
+                        "surface-dim": "#dbdad6",
+                        "on-tertiary-container": "#254188",
+                        "on-primary-container": "#554300",
+                        "outline-variant": "#d0c5af",
+                        "on-background": "#1b1c1a",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-secondary-fixed": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-md shadow-[0_20px_40px_rgba(27,28,26,0.05)]">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-2xl font-bold tracking-tighter text-[#735c00] dark:text-[#d4af37] font-['Noto_Serif']">
+                Celestial Alchemy</div>
+            <nav class="hidden md:flex items-center gap-8 font-['Noto_Serif'] text-sm tracking-wide">
+                <a class="text-stone-600 dark:text-stone-400 hover:text-[#735c00] hover:opacity-80 transition-all duration-300"
+                    href="#">Gemology</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-[#735c00] hover:opacity-80 transition-all duration-300"
+                    href="#">Astrology</a>
+                <a class="text-[#735c00] dark:text-[#d4af37] border-b-2 border-[#d4af37] pb-1 hover:opacity-80 transition-all duration-300"
+                    href="#">The Lab</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-[#735c00] hover:opacity-80 transition-all duration-300"
+                    href="#">Heritage</a>
+            </nav>
+            <div class="flex items-center gap-6">
+                <span
+                    class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-all">science</span>
+                <button
+                    class="bg-primary-container text-on-primary-container px-6 py-2 rounded-xl text-sm font-semibold tracking-wide hover:opacity-90 transition-transform active:scale-95 duration-200">Book
+                    Now</button>
+            </div>
+        </div>
+    </header>
+    <main class="pt-32 pb-20">
+        <!-- Hero Section: Editorial Asymmetry -->
+        <section class="max-w-7xl mx-auto px-8 mb-32">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <span class="font-label text-label-sm uppercase tracking-[0.2em] text-primary mb-4 block">Scientific
+                        Precision</span>
+                    <h1 class="font-headline text-6xl lg:text-7xl font-bold text-on-surface leading-[1.1] mb-8">Silver
+                        Purity <br /><span class="italic text-primary">Testing Laboratory.</span></h1>
+                    <p class="text-on-surface-variant text-lg max-w-xl leading-relaxed mb-10">
+                        Employing high-frequency X-Ray Fluorescence (XRF) and traditional Fire Assay techniques to
+                        certify the molecular integrity of your silver assets with 99.99% accuracy.
+                    </p>
+                    <div class="flex gap-4">
+                        <button
+                            class="bg-primary text-on-primary px-8 py-4 rounded-xl font-semibold shadow-lg shadow-primary/10 hover:opacity-90 transition-all">Start
+                            Analysis</button>
+                        <button
+                            class="border border-outline-variant/30 text-primary px-8 py-4 rounded-xl font-semibold hover:bg-surface-container-low transition-all">View
+                            Standards</button>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10 group">
+                        <img class="w-full h-full object-cover grayscale brightness-110 group-hover:scale-105 transition-transform duration-700"
+                            data-alt="Macro shot of a pure silver bar under bright clinical laboratory lighting with soft bokeh background and metallic reflections"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfYXvEginFk6RPPZS0f2gdrSdzgc_ID1HeUISfFW7utS71PLU8c0XOVeS_3D1WobGtAdGWPIr5gVJdLwFSuuh0ACapx3jA51E_tYo8wgrg2-Q2lJxw4uSi44Oq7FKScvs6VMRcb1R363MsmqlcIniuM7rM9BnDe6mM0ZJqmNFXrjowzyP8ePHFfpJqTcv46J-h7qzGdP1dNT423hS0CDhwh0ETU2LN4FyVlW3P7RwdsSKNKMzmFddrmqlnIj5O25dKhaU3QaJgRpM" />
+                    </div>
+                    <!-- Decorative Alchemy Mandala Element -->
+                    <div class="absolute -bottom-12 -left-12 w-64 h-64 opacity-10 pointer-events-none">
+                        <svg class="text-primary" fill="none" stroke="currentColor" viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" stroke-width="0.5"></circle>
+                            <rect height="60" stroke-width="0.5" transform="rotate(45 50 50)" width="60" x="20" y="20">
+                            </rect>
+                            <circle cx="50" cy="50" r="30" stroke-width="0.5"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bento Grid: Testing Methodologies -->
+        <section class="bg-surface-container-low py-32">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="mb-16 text-center max-w-2xl mx-auto">
+                    <h2 class="font-headline text-4xl font-semibold mb-4 text-on-surface">Purity Methodologies</h2>
+                    <p class="font-body text-on-surface-variant">Our laboratory utilizes a dual-verification process to
+                        ensure commercial and investment grade compliance.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- XRF Spectrometry -->
+                    <div
+                        class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="flex justify-between items-start mb-12">
+                            <div>
+                                <div
+                                    class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary">
+                                    <span class="material-symbols-outlined" data-weight="fill">biotech</span>
+                                </div>
+                                <h3 class="font-headline text-2xl font-bold mb-4">XRF Spectrometry</h3>
+                                <p class="text-on-surface-variant leading-relaxed max-w-md">Non-destructive elemental
+                                    analysis that identifies the exact composition of silver alloys within seconds.
+                                    Critical for hallmarking and retail verification.</p>
+                            </div>
+                            <div class="hidden sm:block w-48 h-48 rounded-xl overflow-hidden">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="Professional scientist using a handheld XRF spectrometer on a silver piece in a clean white laboratory environment"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Yx8RtZSvKioGx9WfoqFgKW5J8h6hmwqGjUH-nFrf7wlawiTeQY2czMbxkZRjKXHFazx38aOq7LZN6JJtift8-VsKZr7rlFAGeNLWzUc2XK25GnDrTPtGVzPC7QzqR4_xb9UgwrtTtP4pcdsdSwcBt3wGvjIoKjavvSJAVBk-MzPig3EgyF64u2s32i3BLSiBwCKs9NlJN3rUYuYTLwLnftnHE736-og3iCF2QNf7mr-31fVG2D6evmTL4DysU86lmB2DZ4BAW50" />
+                            </div>
+                        </div>
+                        <div class="flex gap-4 pt-6 border-t border-outline-variant/10">
+                            <span
+                                class="bg-surface-container text-primary px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Precision:
+                                0.01%</span>
+                            <span
+                                class="bg-surface-container text-primary px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Time:
+                                120s</span>
+                        </div>
+                    </div>
+                    <!-- Fire Assay -->
+                    <div class="bg-primary text-on-primary p-10 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined">local_fire_department</span>
+                            </div>
+                            <h3 class="font-headline text-2xl font-bold mb-4">Fire Assay</h3>
+                            <p class="text-white/80 leading-relaxed text-sm">The global gold standard. Using thermal
+                                extraction to isolate silver from impurities at 1000°C.</p>
+                        </div>
+                        <button
+                            class="mt-8 text-white flex items-center gap-2 font-semibold text-sm hover:translate-x-1 transition-transform">
+                            Learn Process <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                        </button>
+                    </div>
+                    <!-- Density Analysis -->
+                    <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+                        <span class="material-symbols-outlined text-primary mb-4">balance</span>
+                        <h4 class="font-headline text-xl font-bold mb-2">Hydrostatic Balance</h4>
+                        <p class="text-sm text-on-surface-variant mb-6">Measuring specific gravity to detect core
+                            contamination in bullion bars.</p>
+                        <div class="h-1 bg-surface-container-high rounded-full overflow-hidden">
+                            <div class="h-full bg-primary-container w-[85%]"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-[10px] font-bold uppercase tracking-tighter text-outline">Accuracy</span>
+                            <span class="text-[10px] font-bold uppercase tracking-tighter text-primary">85%
+                                Verification</span>
+                        </div>
+                    </div>
+                    <!-- Certification -->
+                    <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+                        <span class="material-symbols-outlined text-primary mb-4">verified</span>
+                        <h4 class="font-headline text-xl font-bold mb-2">ISO Certification</h4>
+                        <p class="text-sm text-on-surface-variant">All results are provided with an encrypted digital
+                            certificate valid worldwide.</p>
+                    </div>
+                    <!-- Density Analysis -->
+                    <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+                        <span class="material-symbols-outlined text-primary mb-4">history_edu</span>
+                        <h4 class="font-headline text-xl font-bold mb-2">Legacy Testing</h4>
+                        <p class="text-sm text-on-surface-variant">Heritage chemical spot testing for antique silverware
+                            and artifacts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Process Transparency Section -->
+        <section class="max-w-7xl mx-auto px-8 py-32 overflow-hidden">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <div class="flex-1 order-2 lg:order-1">
+                    <div class="space-y-12">
+                        <div class="flex gap-6 items-start">
+                            <span class="text-4xl font-headline font-bold text-outline-variant/40">01</span>
+                            <div>
+                                <h4 class="font-headline text-xl font-bold text-on-surface mb-2">Secure Submission</h4>
+                                <p class="text-on-surface-variant">Each silver item is logged into our blockchain-ledger
+                                    with high-resolution photographic evidence.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <span class="text-4xl font-headline font-bold text-outline-variant/40">02</span>
+                            <div>
+                                <h4 class="font-headline text-xl font-bold text-on-surface mb-2">Multi-Spectrum Scan
+                                </h4>
+                                <p class="text-on-surface-variant">Items undergo triplicate testing using independent
+                                    spectroscopic sensors to eliminate outliers.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <span class="text-4xl font-headline font-bold text-outline-variant/40">03</span>
+                            <div>
+                                <h4 class="font-headline text-xl font-bold text-on-surface mb-2">Certified Assay Report
+                                </h4>
+                                <p class="text-on-surface-variant">A comprehensive 12-point purity report is generated,
+                                    signed by a senior gemologist.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 order-1 lg:order-2 relative">
+                    <div class="relative z-10 p-4 bg-white shadow-2xl rounded-2xl rotate-3 transform">
+                        <img class="rounded-xl w-full"
+                            data-alt="A scientist in a lab coat holding a silver ingot and comparing it to a digital purity report on a screen"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkY1I-QReHf5snbxKCYUz2P_4-2EXIQePK0OXehOFVc7ZxXGMfqAOXx_g4H6zwKwggqjehC-n5Ixpk2m4IFk-RU6rehzOt-mj3OL8Q9ksgrcqWeb4lnTMW1L8bNG2HUmMOTMkchEbATq0pyls2MILScpux8ZYny23YbD2C42p1bHBcTe1RUnGX6kOVEWHsBd38X1D-McmF7n-opGQu8WFS4eZIK3FNZnUCqo4LgXr-4FdTEImhnkKl0XF6Ychow5lIiVIFuMtKSbc" />
+                    </div>
+                    <div class="absolute inset-0 bg-primary-container/10 -rotate-3 rounded-2xl"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Trust Stats -->
+        <section class="max-w-7xl mx-auto px-8 mb-32">
+            <div
+                class="bg-surface-container-highest rounded-3xl p-16 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+                <div>
+                    <div class="text-4xl font-headline font-bold text-primary mb-2">45k+</div>
+                    <div class="font-label text-[10px] uppercase tracking-widest font-bold text-outline">Tests Completed
+                    </div>
+                </div>
+                <div>
+                    <div class="text-4xl font-headline font-bold text-primary mb-2">99.9%</div>
+                    <div class="font-label text-[10px] uppercase tracking-widest font-bold text-outline">Accuracy Rate
+                    </div>
+                </div>
+                <div>
+                    <div class="text-4xl font-headline font-bold text-primary mb-2">24h</div>
+                    <div class="font-label text-[10px] uppercase tracking-widest font-bold text-outline">Standard TAT
+                    </div>
+                </div>
+                <div>
+                    <div class="text-4xl font-headline font-bold text-primary mb-2">ISO</div>
+                    <div class="font-label text-[10px] uppercase tracking-widest font-bold text-outline">9001 Certified
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full mt-20 border-t border-[#d0c5af]/20 bg-[#fbf9f5] dark:bg-stone-950">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+            <div class="space-y-6">
+                <div class="text-lg font-semibold text-stone-800 dark:text-stone-200">Celestial Alchemy Laboratory</div>
+                <p class="font-['Manrope'] text-xs uppercase tracking-[0.1em] text-stone-500 max-w-xs leading-relaxed">
+                    Setting the global benchmark for metallurgical integrity and celestial gemological analysis.
+                </p>
+            </div>
+            <div class="flex flex-col gap-4 font-['Manrope'] text-xs uppercase tracking-[0.1em]">
+                <h5 class="text-[#735c00] font-bold">Services</h5>
+                <a class="text-stone-500 dark:text-stone-500 hover:text-[#735c00] transition-colors opacity-100 hover:opacity-70"
+                    href="#">Laboratory Standards</a>
+                <a class="text-stone-500 dark:text-stone-500 hover:text-[#735c00] transition-colors opacity-100 hover:opacity-70"
+                    href="#">Testing Methodology</a>
+                <a class="text-stone-500 dark:text-stone-500 hover:text-[#735c00] transition-colors opacity-100 hover:opacity-70"
+                    href="#">Purity Verification</a>
+            </div>
+            <div class="flex flex-col gap-4 font-['Manrope'] text-xs uppercase tracking-[0.1em]">
+                <h5 class="text-[#735c00] font-bold">Legal &amp; Support</h5>
+                <a class="text-stone-500 dark:text-stone-500 hover:text-[#735c00] transition-colors opacity-100 hover:opacity-70"
+                    href="#">Privacy Policy</a>
+                <a class="text-stone-500 dark:text-stone-500 hover:text-[#735c00] transition-colors opacity-100 hover:opacity-70"
+                    href="#">Terms of Service</a>
+                <a class="text-stone-500 dark:text-stone-500 hover:text-[#735c00] transition-colors opacity-100 hover:opacity-70"
+                    href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-12 py-8 border-t border-outline-variant/10">
+            <p class="font-['Manrope'] text-[10px] uppercase tracking-[0.1em] text-stone-400">© 2024 Celestial Alchemy
+                Laboratory. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
