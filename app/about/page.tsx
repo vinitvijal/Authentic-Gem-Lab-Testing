@@ -1,5 +1,4 @@
 import Link from "next/link";
-import IntakeForm from "../components/IntakeForm";
 
 export const metadata = {
   title: "About Us & Laboratory Standards | Authentic Gem Lab",
@@ -10,7 +9,7 @@ export default function AboutHeritage() {
   return (
     <div className="pt-10 pb-20">
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-20 mt-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-16 mt-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <span className="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2 block font-semibold">
@@ -37,7 +36,7 @@ export default function AboutHeritage() {
       </section>
 
       {/* Mission Statement: Asymmetric Layout */}
-      <section className="bg-surface-container-low py-20 mb-20 overflow-hidden px-4 sm:px-6 md:px-8 border-y border-outline-variant/10">
+      <section className="bg-surface-container-low py-16 mb-16 overflow-hidden px-4 sm:px-6 md:px-8 border-y border-outline-variant/10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="relative order-2 lg:order-1 w-full max-w-sm mx-auto lg:mx-0">
@@ -52,7 +51,7 @@ export default function AboutHeritage() {
                 AGL
               </div>
             </div>
-
+            
             <div className="order-1 lg:order-2 space-y-6 text-center lg:text-left">
               <h2 className="font-headline text-3xl sm:text-4xl font-bold text-on-surface">The AGL Mission</h2>
               <p className="font-body text-secondary text-sm sm:text-base leading-relaxed">
@@ -73,12 +72,12 @@ export default function AboutHeritage() {
       </section>
 
       {/* Expertise Bento Grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-16">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl sm:text-4xl font-semibold">Laboratory Standards</h2>
           <div className="h-[2px] w-20 bg-primary-container mx-auto mt-4"></div>
         </div>
-
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {/* Large Feature */}
           <div className="md:col-span-2 bg-surface-container-lowest p-6 sm:p-8 md:p-10 rounded-3xl shadow-sm border border-outline-variant/15 flex flex-col justify-between">
@@ -136,42 +135,85 @@ export default function AboutHeritage() {
       </section>
 
       {/* Trust Factors / Stats */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 py-16 border-y border-outline-variant/20 mb-20">
-        <div className="text-center">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 py-12 border-y border-outline-variant/20 mb-16 text-center">
+        <div>
           <div className="font-headline text-3xl sm:text-4xl font-bold text-primary mb-1">15k+</div>
           <div className="font-label text-xs uppercase tracking-widest text-outline font-bold">Items Certified</div>
         </div>
-        <div className="text-center">
+        <div>
           <div className="font-headline text-3xl sm:text-4xl font-bold text-primary mb-1">0.02%</div>
           <div className="font-label text-xs uppercase tracking-widest text-outline font-bold">Variance Margin</div>
         </div>
-        <div className="text-center">
+        <div>
           <div className="font-headline text-3xl sm:text-4xl font-bold text-primary mb-1">99.9%</div>
           <div className="font-label text-xs uppercase tracking-widest text-outline font-bold">Accuracy Index</div>
         </div>
-        <div className="text-center">
+        <div>
           <div className="font-headline text-3xl sm:text-4xl font-bold text-primary mb-1">24/7</div>
           <div className="font-label text-xs uppercase tracking-widest text-outline font-bold">Online Verification</div>
         </div>
       </section>
 
-      {/* Contact & Booking Form (The Ledger System) */}
+      {/* Direct Reach Details Section */}
       <section id="contact" className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 mb-12">
-        <div className="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 md:p-12 shadow-[0_20px_40px_rgba(27,28,26,0.04)] border border-outline-variant/15">
-          <div className="text-center max-w-xl mx-auto mb-8 space-y-4">
-            <h2 className="font-headline text-3xl font-bold text-on-surface">Book an Assay / Lab Session</h2>
+        <div className="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 md:p-12 shadow-[0_20px_40px_rgba(27,28,26,0.04)] border border-outline-variant/15 space-y-8">
+          <div className="text-center max-w-xl mx-auto space-y-4">
+            <h2 className="font-headline text-3xl font-bold text-on-surface">Direct Contact &amp; Consultations</h2>
             <p className="text-sm text-secondary font-body">
-              Submit your gemstones, coins, or seeds for verification at our Delhi office. Fill out the booking ledger below, or contact us directly.
+              For direct submissions, certification inquiries, or immediate metal assaying at our Rohini center, please connect with us directly via the channels below.
             </p>
-            <div className="p-4 bg-surface-container-low rounded-2xl text-left text-xs sm:text-sm text-secondary font-body space-y-2 border border-outline-variant/10">
-              <p><strong>Owner:</strong> Rohit Aggarwal</p>
-              <p><strong>Address:</strong> Shop No. 31, DDA Market, CSC-IV, Pocket C-8, Sector-8, Rohini, Delhi-110085 (Opposite Gurudwara, Near Mother Dairy, Madhuban Chowk)</p>
-              <p><strong>Helpline:</strong> 9871069003, 7838111023</p>
-              <p><strong>Official Email:</strong> authenticgemlab@gmail.com</p>
-            </div>
           </div>
 
-          <IntakeForm />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-body text-sm">
+            {/* Phone & Email Card */}
+            <div className="p-6 bg-surface-container-low rounded-2xl border border-outline-variant/10 space-y-4 flex flex-col justify-between">
+              <div className="space-y-4">
+                <h3 className="font-headline text-lg font-bold text-primary flex items-center gap-2">
+                  <span className="material-symbols-outlined text-xl">contact_phone</span>
+                  <span>Direct Helpline</span>
+                </h3>
+                <div className="space-y-2 text-secondary">
+                  <p><strong>Owner / Director:</strong> Rohit Aggarwal</p>
+                  <p className="flex items-center gap-2">
+                    <strong>Phone:</strong>
+                    <a href="tel:9871069003" className="text-primary hover:underline">9871069003</a>,{" "}
+                    <a href="tel:7838111023" className="text-primary hover:underline">7838111023</a>
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <strong>Email:</strong>
+                    <a href="mailto:authenticgemlab@gmail.com" className="text-primary hover:underline">
+                      authenticgemlab@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div className="text-xs text-stone-500 pt-2 border-t border-outline-variant/10">
+                Call ahead for booking priority analysis sessions.
+              </div>
+            </div>
+
+            {/* Address & Hours Card */}
+            <div className="p-6 bg-surface-container-low rounded-2xl border border-outline-variant/10 space-y-4 flex flex-col justify-between">
+              <div className="space-y-4">
+                <h3 className="font-headline text-lg font-bold text-primary flex items-center gap-2">
+                  <span className="material-symbols-outlined text-xl">location_on</span>
+                  <span>Laboratory Address</span>
+                </h3>
+                <div className="space-y-2 text-secondary leading-relaxed text-xs sm:text-sm">
+                  <p>
+                    Shop No. 31, DDA Market, CSC-IV, Pocket C-8, Sector-8, Rohini, Delhi - 110085
+                  </p>
+                  <p className="text-[11px] italic text-stone-500">
+                    (Opposite Gurudwara, Near Mother Dairy, Madhuban Chowk)
+                  </p>
+                  <p><strong>Operating Hours:</strong> Monday – Saturday: 11:00 AM – 7:30 PM</p>
+                </div>
+              </div>
+              <div className="text-xs text-stone-500 pt-2 border-t border-outline-variant/10">
+                Metro Access: Rohini Sector-8 / Madhuban Chowk Intersection.
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

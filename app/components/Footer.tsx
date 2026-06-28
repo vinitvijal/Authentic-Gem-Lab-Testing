@@ -53,7 +53,7 @@ export default function Footer() {
               Verify Report Online
             </Link>
             <Link href="/about#contact" className="text-secondary hover:text-primary transition-colors">
-              Book Appointment
+              Contact Us
             </Link>
           </nav>
           <div className="pt-4 flex gap-4">

@@ -56,7 +56,7 @@ export default function Header() {
             href="/about#contact"
             className="bg-primary-container text-on-primary-container px-3 sm:px-5 py-2 rounded-full font-label text-[9px] sm:text-[10px] uppercase tracking-widest font-bold hover:opacity-95 active:scale-95 transition-all shadow-[0_4px_12px_rgba(212,175,55,0.2)] border-t border-white/30"
           >
-            Book Analysis
+            Contact Us
           </Link>
 
           {/* Mobile Menu Button */}

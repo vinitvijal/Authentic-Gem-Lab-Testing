@@ -43,7 +43,7 @@ export default function Home() {
               href="/about#contact"
               className="inline-block px-8 py-4 bg-primary text-white rounded-xl font-headline font-semibold text-base hover:shadow-lg hover:-translate-y-0.5 transition-all text-center"
             >
-              Book Your Analysis
+              Contact Our Laboratory
             </Link>
           </div>
         </div>
@@ -357,7 +357,7 @@ export default function Home() {
                 href="/about#contact"
                 className="bg-primary text-white px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-headline font-bold text-base sm:text-lg hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md text-center"
               >
-                Book Your Analysis
+                Contact Our Laboratory
               </Link>
               <Link
                 href="/about"
