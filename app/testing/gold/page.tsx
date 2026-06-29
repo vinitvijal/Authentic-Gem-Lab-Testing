@@ -16,8 +16,8 @@ export default function GoldTesting() {
               Metallurgical Integrity
             </span>
             <h1 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold text-on-surface leading-[1.15]">
-              Aurum Gold <br />
-              <span className="italic text-primary">Analysis Laboratory</span>
+              Gold <br />
+              <span className="italic text-primary">Testing Laboratory</span>
             </h1>
             <p className="text-secondary text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-body">
               We employ clinical-grade X-Ray Fluorescence (XRF) scanners and traditional chemical Fire Assay (cupellation) to certify your gold assets with absolute molecular precision at Authentic Gem Lab.
@@ -37,13 +37,13 @@ export default function GoldTesting() {
               </Link>
             </div>
           </div>
-          
+
           <div className="lg:col-span-5 relative w-full max-w-sm sm:max-w-md lg:max-w-none justify-self-center">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10 group border border-outline-variant/15">
               <img
                 className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
                 alt="Macro shot of pure gold bars stacked under bright clinical laboratory lighting"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6QJImibVarRNcYE0dl3D3ViBeuDH-vM_CmUjh6Ylf3wLgcGejKhtmqNlh2HnyaT41MFeZQpIhaSWj5rR8mshmlPqhkRaTYwYltKNL4yBIxJoE73Ee9rUdzq3YpQdk8f9NAaI9wgKOzA4EM8vxBMVIAOaXqoxH3xIaP7EHHS4gab4KQ972mfJB78uKEcXYyph0301TaBMZWmFwXGOlH9vvgKpt9kn8qpakV170PrYf6IAkt--q2Qno95LgQ8LxUPodEYFgHidulF8"
+                src="/gold.jpg"
               />
             </div>
             {/* Decorative Element */}
@@ -117,7 +117,7 @@ export default function GoldTesting() {
       {/* Purity Levels & No-Line Rules */}
       <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 max-w-5xl mx-auto">
         <h2 className="font-headline text-2xl sm:text-3xl font-semibold mb-8 text-center text-on-surface">Gold Karat Purity Standards</h2>
-        
+
         {/* Table wrapping custom typography with ghost borders and no-line spacing */}
         <div className="bg-surface-container-lowest rounded-3xl p-4 sm:p-6 md:p-8 shadow-sm border border-outline-variant/15">
           <div className="overflow-x-auto">
