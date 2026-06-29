@@ -12,7 +12,7 @@ export default function Header() {
     { name: "Gold", href: "/testing/gold" },
     { name: "Silver", href: "/testing/silver" },
     { name: "Gemstones", href: "/testing/gemstones" },
-    { name: "Rudraksh", href: "/testing/rudraksh" },
+    { name: "Rudraksha", href: "/testing/rudraksha" },
     { name: "Diamond", href: "/testing/diamond" },
     { name: "About Us", href: "/about" },
   ];
@@ -23,20 +23,19 @@ export default function Header() {
     <header className="fixed top-0 w-full z-50 glass-nav shadow-[0_20px_40px_rgba(27,28,26,0.05)] border-b border-outline-variant/10">
       <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto">
         <Link href="/" className="text-lg sm:text-xl md:text-2xl font-bold tracking-tighter text-primary font-headline whitespace-nowrap">
-          Authentic Gem Lab
+          AGL Authentic Gem Lab
         </Link>
-        
+
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6 lg:gap-8 font-headline text-sm tracking-wide">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`transition-all duration-300 pb-1 ${
-                isActive(link.href)
-                  ? "text-primary border-b-2 border-primary-container font-semibold"
-                  : "text-secondary hover:text-primary hover:opacity-85"
-              }`}
+              className={`transition-all duration-300 pb-1 ${isActive(link.href)
+                ? "text-primary border-b-2 border-primary-container font-semibold"
+                : "text-secondary hover:text-primary hover:opacity-85"
+                }`}
             >
               {link.name}
             </Link>
@@ -81,11 +80,10 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`pb-1 ${
-                  isActive(link.href)
-                    ? "text-primary border-l-2 border-primary-container pl-3 font-semibold"
-                    : "text-secondary pl-3 hover:text-primary"
-                }`}
+                className={`pb-1 ${isActive(link.href)
+                  ? "text-primary border-l-2 border-primary-container pl-3 font-semibold"
+                  : "text-secondary pl-3 hover:text-primary"
+                  }`}
               >
                 {link.name}
               </Link>

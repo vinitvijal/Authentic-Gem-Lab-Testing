@@ -6,10 +6,10 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-8 md:px-12 py-16 max-w-7xl mx-auto">
         <div className="space-y-6">
           <div className="text-xl font-bold tracking-tighter text-primary font-headline">
-            Authentic Gem Lab
+            AGL Authentic Gem Lab
           </div>
           <p className="text-secondary font-body text-sm leading-relaxed max-w-sm">
-            Authentic Gem Lab (AGL) is Delhi's premier laboratory providing ISO-certified testing for Gold, Silver, Gemstones, Rudraksh, and Diamonds. Under the guidance of Rohit Aggarwal, we ensure absolute scientific precision and trust.
+            AGL Authentic Gem Lab is Delhi's premier laboratory providing ISO-certified testing for Gold, Silver, Gemstones, Rudraksha, and Diamonds. Under the guidance of Rohit Aggarwal, we ensure absolute scientific precision and trust.
           </p>
         </div>
 
@@ -27,8 +27,8 @@ export default function Footer() {
             <Link href="/testing/gemstones" className="text-secondary hover:text-primary transition-colors">
               Gemstones & Astrological Verification
             </Link>
-            <Link href="/testing/rudraksh" className="text-secondary hover:text-primary transition-colors">
-              Rudraksh X-Ray Scanning
+            <Link href="/testing/Rudraksha" className="text-secondary hover:text-primary transition-colors">
+              Rudraksha X-Ray Scanning
             </Link>
             <Link href="/testing/diamond" className="text-secondary hover:text-primary transition-colors">
               Diamond 4C & Origin Grading
@@ -41,8 +41,8 @@ export default function Footer() {
             Connect & Support
           </h5>
           <p className="text-secondary text-sm leading-relaxed">
-            <strong>Address:</strong> Shop No. 31, DDA Market, CSC-IV, Pocket C-8, Sector-8, Rohini, Delhi-85 (opp. Gurudwara) Near Mother Dairy, Madhuban Chowk<br />
-            <strong>Phone:</strong> 9871069003, 7838111023<br />
+            <strong>Address:</strong> <Link href="https://maps.app.goo.gl/J3eB8YT3zQbjPfUc7" target="_blank">Shop No. 6, DDA Market, CSC-IV, Pocket C-8, Sector-8, Rohini, Delhi-85 (opp. Gurudwara) Near Mother Dairy, Madhuban Chowk</Link><br />
+            <strong>Phone:</strong> 9643210025<br />
             <strong>Email:</strong> authenticgemlab@gmail.com
           </p>
           <nav className="flex flex-col gap-2 font-label text-xs uppercase tracking-[0.1em] pt-2">
@@ -60,9 +60,11 @@ export default function Footer() {
             <span className="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">
               mail
             </span>
-            <span className="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">
-              location_on
-            </span>
+            <Link href="https://maps.app.goo.gl/J3eB8YT3zQbjPfUc7" target="_blank">
+              <span className="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">
+                location_on
+              </span>
+            </Link>
           </div>
         </div>
       </div>

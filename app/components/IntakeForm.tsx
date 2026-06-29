@@ -99,8 +99,8 @@ export default function IntakeForm() {
           >
             <option>Gold (Bullion/Jewelry)</option>
             <option>Silver (Plate/Coinage)</option>
-            <option>Colored Gemstone (Sapphire/Ruby/Emerald)</option>
-            <option>Rudraksh Seed (Sacred Bead)</option>
+            <option>Gemstone (Sapphire/Ruby/Emerald)</option>
+            <option>Rudraksha Seed (Sacred Bead)</option>
             <option>Diamond (Natural/CVD)</option>
           </select>
         </div>
