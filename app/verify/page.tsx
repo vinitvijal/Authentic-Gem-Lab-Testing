@@ -21,7 +21,7 @@ const mockDatabase: Record<string, MockReport> = {
     purity: "99.99% Fine Gold (Verified)",
     weight: "100.00 Grams",
     date: "June 12, 2026",
-    result: "Genuine Aurum (ISO 11426 Certified)",
+    result: "Genuine Gold (ISO 11426 Certified)",
     comments: "No core inclusions detected. Zero density anomalies.",
     imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuB6QJImibVarRNcYE0dl3D3ViBeuDH-vM_CmUjh6Ylf3wLgcGejKhtmqNlh2HnyaT41MFeZQpIhaSWj5rR8mshmlPqhkRaTYwYltKNL4yBIxJoE73Ee9rUdzq3YpQdk8f9NAaI9wgKOzA4EM8vxBMVIAOaXqoxH3xIaP7EHHS4gab4KQ972mfJB78uKEcXYyph0301TaBMZWmFwXGOlH9vvgKpt9kn8qpakV170PrYf6IAkt--q2Qno95LgQ8LxUPodEYFgHidulF8",
   },
@@ -35,15 +35,15 @@ const mockDatabase: Record<string, MockReport> = {
     comments: "Microscopic carbon pinpoints present on the pavilion. Girdle laser inscribed.",
     imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuAzVESq-pCl3YLMX2o1c8VPc2lr8TgdkmCHr-Cnucqq4KpdI-t6l3v_LCAuhbPwN8ie0xWVTKAog1aAXILDS7MOD8iIGts4sulYWOGDozMtNbImzZzz449MB-RRhQIZwStJ7vIXNHVxPJ6OSgbJ5EmUOckrEa4dgoVnnfe3yVexLB7r1g0szJuasJaU6Vv__TDZR0EfT6AOjW13rJa-NskngAvkFo1ngBkLGzQtn7Jhgg9Y84VMntMLDKaab253DDX1xnZx13kq9CA",
   },
-  "AGL-303-RUDRAKSH": {
-    id: "AGL-303-RUDRAKSH",
-    category: "14 Mukhi Rudraksh (Dev Mani)",
+  "AGL-303-Rudraksha": {
+    id: "AGL-303-Rudraksha",
+    category: "14 Mukhi Rudraksha (Dev Mani)",
     purity: "14 Chambers Verified via Radiography",
     weight: "3.42 Grams",
     date: "June 25, 2026",
     result: "Authentic Elaeocarpus ganitrus seed",
     comments: "X-Ray imaging confirms 14 symmetric seed chambers. Specific gravity density matches botanical standards.",
-    imageUrl: "/images/rudraksh-testing.png",
+    imageUrl: "/images/Rudraksha-testing.png",
   },
   "AGL-404-EMERALD": {
     id: "AGL-404-EMERALD",
@@ -121,7 +121,7 @@ export default function ReportVerification() {
                   type="text"
                   value={reportId}
                   onChange={(e) => setReportId(e.target.value)}
-                  placeholder="e.g. AGL-303-RUDRAKSH, AGL-101-GOLD"
+                  placeholder="e.g. AGL-303-Rudraksha, AGL-101-GOLD"
                   className="flex-grow bg-surface-container-low border border-transparent rounded-lg px-4 py-3 focus:bg-surface-container-lowest focus:border-primary outline-none transition-all font-mono uppercase text-sm"
                   required
                 />
@@ -144,9 +144,9 @@ export default function ReportVerification() {
                 </button>
               </div>
             </div>
-            
+
             <div className="text-[11px] text-stone-500 font-body leading-normal">
-              <strong>Sample IDs to test:</strong> <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[10px] text-primary">AGL-101-GOLD</code>, <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[10px] text-primary">AGL-202-DIAMOND</code>, <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[10px] text-primary">AGL-303-RUDRAKSH</code>
+              <strong>Sample IDs to test:</strong> <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[10px] text-primary">AGL-101-GOLD</code>, <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[10px] text-primary">AGL-202-DIAMOND</code>, <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[10px] text-primary">AGL-303-Rudraksha</code>
             </div>
           </form>
         </div>
@@ -245,7 +245,7 @@ export default function ReportVerification() {
             <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm">
               <li><strong>Gold &amp; Silver Purity:</strong> Measured using high-resolution XRF spectrometry, outlining parts per thousand (e.g. 916 Gold or 925 Silver).</li>
               <li><strong>Diamond 4Cs:</strong> Detailed clarity, cut grade, color value, and carat weight aligned with GIA guidelines.</li>
-              <li><strong>Rudraksh Mukhi Count:</strong> Internal chamber layout verified via digital X-Ray scanning to confirm natural compartment counts.</li>
+              <li><strong>Rudraksha Mukhi Count:</strong> Internal chamber layout verified via digital X-Ray scanning to confirm natural compartment counts.</li>
             </ul>
           </div>
         </div>
