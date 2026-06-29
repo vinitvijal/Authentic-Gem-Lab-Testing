@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Gemstones & Astrological Verification | Authentic Gem Lab",
-  description: "Advanced colored gemstone testing, treatments identification, and Vedic astrological alignment. Certified Raman spectroscopy for sapphires, rubies, and emeralds at Authentic Gem Lab.",
+  description: "Advanced gemstone testing, treatments identification, and Vedic astrological alignment. Certified Raman spectroscopy for sapphires, rubies, and emeralds at Authentic Gem Lab.",
 };
 
 export default function GemstonesTesting() {
@@ -16,7 +16,7 @@ export default function GemstonesTesting() {
               Vedic &amp; Chemical Alignment
             </span>
             <h1 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold text-on-surface leading-[1.15]">
-              Colored Gemstone <br />
+              Gemstone <br />
               <span className="italic text-primary">Testing &amp; Verification</span>
             </h1>
             <p className="text-secondary text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-body">
@@ -37,7 +37,7 @@ export default function GemstonesTesting() {
               </Link>
             </div>
           </div>
-          
+
           <div className="lg:col-span-5 relative w-full max-w-sm sm:max-w-md lg:max-w-none justify-self-center">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10 group border border-outline-variant/15">
               <img
@@ -58,7 +58,7 @@ export default function GemstonesTesting() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="font-headline text-3xl sm:text-4xl font-semibold mb-4 text-on-surface">Scientific Assaying Standards</h2>
             <p className="font-body text-secondary text-sm sm:text-base">
-              Colored gemstone diagnostics require identifying composite enhancements, heat injections, and geological origins.
+              Gemstone diagnostics require identifying composite enhancements, heat injections, and geological origins.
             </p>
           </div>
 
@@ -120,7 +120,7 @@ export default function GemstonesTesting() {
               Authentic Gem Lab provides dedicated <strong>Vedic Suitability Assays</strong>, certifying that the gemstone is completely untreated, natural, and possesses the correct clarity to transmit planetary frequencies.
             </p>
           </div>
-          
+
           <div className="bg-surface-container rounded-3xl p-6 sm:p-8 md:p-10 space-y-6 border border-outline-variant/20 shadow-sm">
             <h3 className="font-headline text-xl sm:text-2xl font-bold text-primary text-center lg:text-left">Planetary Gemstone Matches</h3>
             <div className="space-y-4 font-body">
