@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About Us & Laboratory Standards | Authentic Gem Lab",
-  description: "Learn about Authentic Gem Lab (AGL) in Delhi, directed by Rohit Aggarwal. Certified ISO-accredited testing for Gold, Silver, Gemstones, Rudraksh, and Diamonds.",
+  description: "Learn about Authentic Gem Lab (AGL) in Delhi, directed by Rohit Aggarwal. Certified ISO-accredited testing for Gold, Silver, Gemstones, Rudraksha, and Diamonds.",
 };
 
 export default function AboutHeritage() {
@@ -13,13 +13,14 @@ export default function AboutHeritage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <span className="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2 block font-semibold">
-              Our Genesis &amp; Integrity
+              India&apos;s Pioneering Integrated Facility
             </span>
             <h1 className="font-headline text-3xl sm:text-4xl lg:text-5xl leading-[1.15] font-bold tracking-tight text-on-surface">
-              Where the <span className="text-primary italic">Soul of Integrity</span> meets the Precision of Science.
+              India&apos;s First Lab for Gold, Silver, Diamond, Rudraksha &amp; Gemstone Testing—<br className="hidden sm:inline" />
+              <span className="text-primary italic">All at one place.</span>
             </h1>
             <p className="font-body text-base sm:text-lg text-secondary max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Authentic Gem Lab (AGL) was established under the leadership of Rohit Aggarwal with a clear mission: to validate the authenticity and properties of gemstones and precious metals through rigorous, scientific testing protocols.
+              Established under the leadership of Rohit Aggarwal, Authentic Gem Lab (AGL) brings absolute transparency, state-of-the-art scientific instrumentation, and ISO-accredited testing standards to every certification, all under one roof.
             </p>
           </div>
           <div className="lg:col-span-5 relative w-full max-w-sm sm:max-w-md lg:max-w-none justify-self-center">
@@ -51,7 +52,7 @@ export default function AboutHeritage() {
                 AGL
               </div>
             </div>
-            
+
             <div className="order-1 lg:order-2 space-y-6 text-center lg:text-left">
               <h2 className="font-headline text-3xl sm:text-4xl font-bold text-on-surface">The AGL Mission</h2>
               <p className="font-body text-secondary text-sm sm:text-base leading-relaxed">
@@ -77,7 +78,7 @@ export default function AboutHeritage() {
           <h2 className="font-headline text-3xl sm:text-4xl font-semibold">Laboratory Standards</h2>
           <div className="h-[2px] w-20 bg-primary-container mx-auto mt-4"></div>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {/* Large Feature */}
           <div className="md:col-span-2 bg-surface-container-lowest p-6 sm:p-8 md:p-10 rounded-3xl shadow-sm border border-outline-variant/15 flex flex-col justify-between">
@@ -176,8 +177,8 @@ export default function AboutHeritage() {
                   <p><strong>Owner / Director:</strong> Rohit Aggarwal</p>
                   <p className="flex items-center gap-2">
                     <strong>Phone:</strong>
-                    <a href="tel:9871069003" className="text-primary hover:underline">9871069003</a>,{" "}
-                    <a href="tel:7838111023" className="text-primary hover:underline">7838111023</a>
+                    <a href="tel:9643210025" className="text-primary hover:underline">9643210025</a>{" "}
+                    {/* <a href="tel:7838111023" className="text-primary hover:underline">7838111023</a> */}
                   </p>
                   <p className="flex items-center gap-2">
                     <strong>Email:</strong>
@@ -200,13 +201,13 @@ export default function AboutHeritage() {
                   <span>Laboratory Address</span>
                 </h3>
                 <div className="space-y-2 text-secondary leading-relaxed text-xs sm:text-sm">
-                  <p>
-                    Shop No. 31, DDA Market, CSC-IV, Pocket C-8, Sector-8, Rohini, Delhi - 110085
-                  </p>
+                  <Link href="https://maps.app.goo.gl/J3eB8YT3zQbjPfUc7" target="_blank">
+                    Shop No. 6, DDA Market, CSC-IV, Pocket C-8, Sector-8, Rohini, Delhi - 110085
+                  </Link>
                   <p className="text-[11px] italic text-stone-500">
                     (Opposite Gurudwara, Near Mother Dairy, Madhuban Chowk)
                   </p>
-                  <p><strong>Operating Hours:</strong> Monday – Saturday: 11:00 AM – 7:30 PM</p>
+                  <p><strong>Operating Hours:</strong> Tuesday – Sunday: 11:00 AM – 8:00 PM</p>
                 </div>
               </div>
               <div className="text-xs text-stone-500 pt-2 border-t border-outline-variant/10">

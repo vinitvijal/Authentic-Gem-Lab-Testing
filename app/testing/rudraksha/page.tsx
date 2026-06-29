@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Rudraksh Verification & X-Ray Certification | Authentic Gem Lab",
-  description: "Identify genuine Rudraksh beads using digital radiography (X-Ray), density analysis, and botanical verification. Spot carved lines and composite fakes at Authentic Gem Lab.",
+  title: "Rudraksha Verification & X-Ray Certification | Authentic Gem Lab",
+  description: "Identify genuine Rudraksha beads using digital radiography (X-Ray), density analysis, and botanical verification. Spot carved lines and composite fakes at Authentic Gem Lab.",
 };
 
-export default function RudrakshTesting() {
+export default function RudrakshaTesting() {
   return (
     <div className="pt-10 pb-20">
       {/* Hero Section */}
@@ -16,7 +16,7 @@ export default function RudrakshTesting() {
               Botanical &amp; Radiographic Assays
             </span>
             <h1 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold text-on-surface leading-[1.15]">
-              Rudraksh Seed <br />
+              Rudraksha Testing <br />
               <span className="italic text-primary">X-Ray Certification</span>
             </h1>
             <p className="text-secondary text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-body">
@@ -37,12 +37,12 @@ export default function RudrakshTesting() {
               </Link>
             </div>
           </div>
-          
+
           <div className="lg:col-span-5 relative w-full max-w-sm sm:max-w-md lg:max-w-none justify-self-center">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative z-10 group border border-outline-variant/15">
               <img
                 className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
-                alt="A close-up photograph of a sacred Rudraksh bead being scanned under digital X-ray imaging in a laboratory setting"
+                alt="A close-up photograph of a sacred Rudraksha bead being scanned under digital X-ray imaging in a laboratory setting"
                 src="/images/rudraksh-testing.png"
               />
             </div>
@@ -110,8 +110,8 @@ export default function RudrakshTesting() {
 
       {/* Guide Table */}
       <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 max-w-5xl mx-auto">
-        <h2 className="font-headline text-2xl sm:text-3xl font-semibold mb-8 text-center text-on-surface">Vedic Rudraksh Classifications</h2>
-        
+        <h2 className="font-headline text-2xl sm:text-3xl font-semibold mb-8 text-center text-on-surface">Vedic Rudraksha Classifications</h2>
+
         <div className="bg-surface-container-lowest rounded-3xl p-4 sm:p-6 md:p-8 shadow-sm border border-outline-variant/15">
           <div className="overflow-x-auto">
             <table className="w-full text-left font-body text-sm sm:text-base">
