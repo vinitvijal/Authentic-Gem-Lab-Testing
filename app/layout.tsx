@@ -18,8 +18,8 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "AGL Authentic Gem Lab | Certified Gem, Diamond & Metal Testing",
-  description: "Authentic Gem Lab (AGL) in Delhi provides certified, ISO-accredited testing for Gold, Silver, Gemstones, Rudraksh, and Diamonds using state-of-the-art XRF spectrometry, X-ray scanning, and 4C grading.",
-  keywords: "Authentic Gem Lab, AGL, Gold testing Delhi, Silver testing, Gemstone testing, Rudraksh certification, Diamond grading, XRF analysis, Rohini Delhi",
+  description: "Authentic Gem Lab (AGL) in Delhi provides certified, ISO-accredited testing for Gold, Silver, Gemstones, Rudraksha, and Diamonds using state-of-the-art XRF spectrometry, X-ray scanning, and 4C grading.",
+  keywords: "Authentic Gem Lab, AGL, Gold testing Delhi, Silver testing, Gemstone testing, Rudraksha certification, Diamond grading, XRF analysis, Rohini Delhi",
 };
 
 export default function RootLayout({

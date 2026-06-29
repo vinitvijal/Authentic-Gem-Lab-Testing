@@ -6,7 +6,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative px-4 sm:px-6 md:px-8 py-10 md:py-16 lg:py-20 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         <div className="absolute inset-0 alchemical-mandala pointer-events-none -z-10"></div>
-        
+
         <div className="flex-grow space-y-6 z-10 w-full lg:w-3/5 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/20">
             <span className="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
@@ -20,9 +20,9 @@ export default function Home() {
             &amp; Assaying Solutions
           </h1>
           <p className="text-base sm:text-lg text-secondary max-w-xl mx-auto lg:mx-0 font-body leading-relaxed">
-            Where empirical scientific precision meets trusted gemstone heritage. We provide definitive composition analysis and hallmark certification for Gold, Silver, Gemstones, Rudraksh, and Diamonds.
+            Where empirical scientific precision meets trusted gemstone heritage. We provide definitive composition analysis and hallmark certification for Gold, Silver, Gemstones, Rudraksha, and Diamonds.
           </p>
-          
+
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 pt-2">
             <div className="flex items-center gap-2 sm:gap-3">
               <span className="material-symbols-outlined text-primary text-xl">verified</span>
@@ -37,7 +37,7 @@ export default function Home() {
               <span className="text-xs font-label font-bold uppercase tracking-wider">Vedic Certification</span>
             </div>
           </div>
-          
+
           <div className="pt-4">
             <Link
               href="/about#contact"
@@ -48,8 +48,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex-grow w-full max-w-sm sm:max-w-md lg:max-w-none relative justify-self-center lg:w-2/5">
-          <div className="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden shadow-[0_15px_30px_rgba(27,28,26,0.08)] border border-outline-variant/20 transform rotate-2 hover:rotate-0 transition-transform duration-700">
+        <div className="grow w-full max-w-sm sm:max-w-md lg:max-w-none relative justify-self-center lg:w-2/5">
+          <div className="relative w-full aspect-4/5 rounded-4xl overflow-hidden shadow-[0_15px_30px_rgba(27,28,26,0.08)] border border-outline-variant/20 transform rotate-2 hover:rotate-0 transition-transform duration-700">
             <img
               className="w-full h-full object-cover"
               alt="High-end close-up of a raw diamond being inspected with a professional magnifying loupe under clinical laboratory lighting"
@@ -132,7 +132,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/testing/silver"
-                  className="text-xs font-label uppercase tracking-widest text-primary font-bold flex items-center gap-1 hover:opacity-80 pt-2 block"
+                  className="text-xs font-label uppercase tracking-widest text-primary font-bold flex items-center gap-1 hover:opacity-80 pt-2 "
                 >
                   View Silver Lab <span className="material-symbols-outlined text-xs">arrow_forward</span>
                 </Link>
@@ -176,7 +176,7 @@ export default function Home() {
             <div className="md:col-span-8 bg-primary text-white p-6 sm:p-8 rounded-3xl relative overflow-hidden group flex flex-col justify-between shadow-sm border border-primary/20">
               <div className="relative z-10 h-full flex flex-col justify-between">
                 <div className="max-w-md space-y-4">
-                  <h3 className="text-2xl sm:text-3xl font-headline font-bold">Colored Gemstones &amp; Vedic Alignment</h3>
+                  <h3 className="text-2xl sm:text-3xl font-headline font-bold">Gemstones &amp; Vedic Alignment</h3>
                   <p className="opacity-80 text-sm leading-relaxed font-body">
                     Identifying treatment profiles (heating, glass-filling), natural origin, and mineral families. We certify suitability for astrological planetary alignment.
                   </p>
@@ -199,7 +199,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Rudraksh Testing */}
+            {/* Rudraksha Testing */}
             <div className="md:col-span-12 bg-surface-container-lowest p-6 sm:p-8 md:p-10 rounded-3xl border border-outline-variant/15 shadow-sm hover:shadow-md transition-all group">
               <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                 <div className="flex-1 space-y-4 order-2 lg:order-1">
@@ -208,24 +208,24 @@ export default function Home() {
                       Botanical X-Ray Radiography
                     </span>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-headline font-bold text-on-surface">Rudraksh Mukhi Certification</h3>
+                  <h3 className="text-2xl sm:text-3xl font-headline font-bold text-on-surface">Rudraksha Mukhi Certification</h3>
                   <p className="text-sm text-secondary font-body leading-relaxed">
-                    Rudraksh beads possess distinct facets (Mukhis). Our laboratory utilizes digital X-Ray imaging to check internal seed compartments, density scans to detect fake faces/glue modifications, and botanical testing to verify genuine Elaeocarpus ganitrus seeds.
+                    Rudraksha beads possess distinct facets (Mukhis). Our laboratory utilizes digital X-Ray imaging to check internal seed compartments, density scans to detect fake faces/glue modifications, and botanical testing to verify genuine Elaeocarpus ganitrus seeds.
                   </p>
                   <div className="pt-2">
                     <Link
-                      href="/testing/rudraksh"
+                      href="/testing/Rudraksha"
                       className="inline-flex items-center gap-2 px-6 py-3.5 bg-primary text-white rounded-xl font-headline font-semibold text-sm hover:opacity-90 transition-all shadow-md"
                     >
-                      Authenticate Rudraksh <span className="material-symbols-outlined text-xs">arrow_forward</span>
+                      Authenticate Rudraksha <span className="material-symbols-outlined text-xs">arrow_forward</span>
                     </Link>
                   </div>
                 </div>
                 <div className="flex-1 order-1 lg:order-2 w-full aspect-video rounded-2xl overflow-hidden shadow border border-outline-variant/10">
                   <img
                     className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
-                    alt="A close-up photograph of a sacred Rudraksh bead being scanned under digital X-ray imaging in a modern laboratory"
-                    src="/images/rudraksh-testing.png"
+                    alt="A close-up photograph of a sacred Rudraksha bead being scanned under digital X-ray imaging in a modern laboratory"
+                    src="/images/Rudraksha-testing.png"
                   />
                 </div>
               </div>
@@ -270,7 +270,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-headline font-semibold mb-4 text-on-surface">Client Reviews</h2>
           <div className="w-20 h-[2px] bg-primary-container mx-auto"></div>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Testimonial 1 */}
           <div className="space-y-4 flex flex-col items-center text-center p-6 bg-surface-container-lowest rounded-2xl border border-outline-variant/10 shadow-sm">
@@ -333,7 +333,7 @@ export default function Home() {
               ))}
             </div>
             <p className="text-secondary italic font-body text-xs sm:text-sm leading-relaxed max-w-xs">
-              &ldquo;A unique blend of science and Vedic wisdom. Their specific gravity testing of my Rudraksh seeds was highly scientific.&rdquo;
+              &ldquo;A unique blend of science and Vedic wisdom. Their specific gravity testing of my Rudraksha seeds was highly scientific.&rdquo;
             </p>
             <div className="pt-2">
               <h4 className="font-headline font-bold text-on-surface text-sm sm:text-base">Dr. Anirudh Rao</h4>
