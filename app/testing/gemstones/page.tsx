@@ -1,8 +1,22 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Gemstones & Astrological Verification | Authentic Gem Lab",
-  description: "Advanced gemstone testing, treatments identification, and Vedic astrological alignment. Certified Raman spectroscopy for sapphires, rubies, and emeralds at Authentic Gem Lab.",
+export const dynamic = "force-static";
+
+export const metadata: Metadata = {
+  title: "Gemstone Testing Laboratory in Delhi | Vedic Certification AGL",
+  description: "Delhi's leading ISO 9001:2015 certified gemstone testing laboratory in Rohini. We certify astrological natural gemstones, treatments (heating, glass filling) & origin.",
+  alternates: {
+    canonical: "https://authenticgemlab.com/testing/gemstones",
+  },
+  openGraph: {
+    title: "Gemstone Testing Laboratory in Delhi | Vedic Certification AGL",
+    description: "Delhi's leading ISO 9001:2015 certified gemstone testing laboratory in Rohini. We certify astrological natural gemstones, treatments (heating, glass filling) & origin.",
+    url: "https://authenticgemlab.com/testing/gemstones",
+    siteName: "Authentic Gem Lab",
+    type: "website",
+    locale: "en_IN",
+  },
 };
 
 export default function GemstonesTesting() {
@@ -13,14 +27,14 @@ export default function GemstonesTesting() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <span className="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2 block font-semibold">
-              Vedic &amp; Chemical Alignment
+              Vedic suitability &amp; Spectroscopic Identification
             </span>
             <h1 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold text-on-surface leading-[1.15]">
               Gemstone <br />
-              <span className="italic text-primary">Testing &amp; Verification</span>
+              <span className="italic text-primary">Testing &amp; Certification</span>
             </h1>
             <p className="text-secondary text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-body">
-              Bridging modern atomic analytics with planetary energies. We utilize laser Raman Spectroscopy to identify heat treatments and chemical composition, validating both the mineral's authenticity and its suitability for Vedic purposes at Authentic Gem Lab.
+              Bridging modern atomic analytics with planetary energies. As Delhi's premier <strong className="text-on-surface font-semibold text-primary">gemstone testing laboratory</strong>, we utilize laser Raman Spectroscopy, refractometry, and high-power gemological microscopes to identify synthetic treatments, color enhancements, and mineral origins.
             </p>
             <div className="flex justify-center lg:justify-start gap-4 pt-2">
               <Link
@@ -58,7 +72,7 @@ export default function GemstonesTesting() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="font-headline text-3xl sm:text-4xl font-semibold mb-4 text-on-surface">Scientific Assaying Standards</h2>
             <p className="font-body text-secondary text-sm sm:text-base">
-              Gemstone diagnostics require identifying composite enhancements, heat injections, and geological origins.
+              Certified gemstone testing requires advanced molecular scans. We check for thermal diffusion, lead glass fills, organic dyes, and composite overlays at our Rohini laboratory.
             </p>
           </div>
 
@@ -117,7 +131,7 @@ export default function GemstonesTesting() {
               In Vedic astrology, natural, untreated gemstones function as cosmic transmitters, focusing planetary radiation into the wearer's field. If a gemstone is treated with high heat, chemicals, or lead glass-fillers, its crystal lattice is fractured, making it astrologically ineffective.
             </p>
             <p className="text-secondary font-body text-sm sm:text-base leading-relaxed">
-              Authentic Gem Lab provides dedicated <strong>Vedic Suitability Assays</strong>, certifying that the gemstone is completely untreated, natural, and possesses the correct clarity to transmit planetary frequencies.
+              Authentic Gem Lab provides dedicated <strong className="text-on-surface font-semibold text-primary">Vedic Suitability Assays</strong>, certifying that the gemstone is completely untreated, natural, and possesses the correct clarity to transmit planetary frequencies.
             </p>
           </div>
 
@@ -167,6 +181,144 @@ export default function GemstonesTesting() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container-low border-t border-outline-variant/10">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-headline font-semibold mb-4 text-on-surface">Frequently Asked Questions</h2>
+            <p className="text-secondary font-body text-sm sm:text-base leading-relaxed">
+              Find answers to the most common queries regarding gemstone certification in Delhi, treatment scans, and Vedic planetary wear suitability.
+            </p>
+            <div className="w-20 h-[2px] bg-primary-container mx-auto mt-4"></div>
+          </div>
+
+          <div className="space-y-4">
+            {/* FAQ 1 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  What is an astrological gemstone and why must it be untreated?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                In Vedic Jyotish, a gemstone acts as a physical conduit that captures and transmits specific planetary rays into the body's subtle energy channels. Heating, beryllium diffusion, or glass-filling permanently alters the stone's crystalline structure and chemical composition, disrupting its natural refractive properties. Consequently, treated stones are rendered astrologically inert and fail to provide the desired remedial benefits.
+              </div>
+            </details>
+
+            {/* FAQ 2 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  How does AGL gemstone testing laboratory in Delhi identify treatments?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                At our Rohini testing laboratory, we utilize high-precision instruments including laser Raman Spectroscopy (532nm) to analyze internal mineral structures, gemstone refractometers to check refractive indices down to 0.001 RI, and high-power gemological microscopes to locate signature gas bubbles, flux residues, and thermal stress cracks indicative of artificial heating or glass-filling.
+              </div>
+            </details>
+
+            {/* FAQ 3 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  What gemstones are tested for Vedic astrology suitability at your Rohini lab?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                We perform comprehensive tests on the Navaratna (nine primary astrological gemstones), including Blue Sapphire (Neelam), Yellow Sapphire (Pukhraj), Ruby (Manik), Emerald (Panna), Red Coral (Moonga), Pearl (Moti), Hessonite (Gomed), Cat's Eye (Lehsuniya), and Diamond (Heera). We check each specimen for organic chemical structure and geological origin.
+              </div>
+            </details>
+
+            {/* FAQ 4 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  What information does an AGL Gemstone Purity Certificate contain?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                An AGL Gemstone Certificate contains the exact weight (in carats and ratti), shape/cut style, dimensions, color, species and mineral family, refractive index, and specific gravity. Crucially, it lists diagnostic findings on treatment status (e.g., No Indication of Heating) and origin, accompanied by a secure online report lookup QR code.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "@id": "https://authenticgemlab.com/testing/gemstones/#service",
+                "name": "Astrological Gemstone Testing & Vedic Verification",
+                "provider": {
+                  "@type": "GovernmentOffice",
+                  "name": "AGL Authentic Gem Lab",
+                  "url": "https://authenticgemlab.com",
+                  "logo": "https://authenticgemlab.com/logo.png"
+                },
+                "areaServed": "Delhi",
+                "description": "Scientific gemstone testing services in Rohini, Delhi. Specialized Raman spectroscopy scans, treatment profiles identification, and Vedic astrological suitability assays."
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://authenticgemlab.com/testing/gemstones/#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is an astrological gemstone and why must it be untreated?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Astrological gemstones channel planetary rays. Treatments like heat, glass-filling, or diffusion damage the crystal structure and block this energy, rendering them astrologically ineffective."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How does AGL gemstone testing laboratory in Delhi identify treatments?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our Rohini lab uses laser Raman Spectroscopy (532nm), refractometer measurements, and gemological microscopes to locate signature growth lines, flux remnants, and thermal stress cracks."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What gemstones are tested for Vedic astrology suitability at your Rohini lab?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "We test the Navaratna family including Blue Sapphire, Ruby, Emerald, Yellow Sapphire, Hessonite, Coral, Pearl, Cat's Eye, and Diamond for chemical integrity and natural geological origin."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What information does an AGL Gemstone Purity Certificate contain?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "An AGL certificate lists dimensions, weight, refractive index, specific gravity, mineral species, treatment declarations (e.g., natural/untreated), origin, and a digital lookup report code."
+                    }
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
 
       {/* CTA section */}
       <section className="mx-4 sm:mx-6">
