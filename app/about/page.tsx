@@ -1,8 +1,22 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "About Us & Laboratory Standards | Authentic Gem Lab",
-  description: "Learn about Authentic Gem Lab (AGL) in Delhi, directed by Rohit Aggarwal. Certified ISO-accredited testing for Gold, Silver, Gemstones, Rudraksha, and Diamonds.",
+export const dynamic = "force-static";
+
+export const metadata: Metadata = {
+  title: "About Us & Laboratory Credentials | Authentic Gem Lab",
+  description: "Learn about Delhi's leading integrated testing facility for Gold, Silver, Gemstones, Rudraksha, and Diamonds in Rohini, directed by Rohit Aggarwal.",
+  alternates: {
+    canonical: "https://authenticgemlab.com/about",
+  },
+  openGraph: {
+    title: "About Us & Laboratory Credentials | Authentic Gem Lab",
+    description: "Learn about Delhi's leading integrated testing facility for Gold, Silver, Gemstones, Rudraksha, and Diamonds in Rohini, directed by Rohit Aggarwal.",
+    url: "https://authenticgemlab.com/about",
+    siteName: "Authentic Gem Lab",
+    type: "website",
+    locale: "en_IN",
+  },
 };
 
 export default function AboutHeritage() {

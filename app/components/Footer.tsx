@@ -27,7 +27,7 @@ export default function Footer() {
             <Link href="/testing/gemstones" className="text-secondary hover:text-primary transition-colors">
               Gemstones & Astrological Verification
             </Link>
-            <Link href="/testing/Rudraksha" className="text-secondary hover:text-primary transition-colors">
+            <Link href="/testing/rudraksha" className="text-secondary hover:text-primary transition-colors">
               Rudraksha X-Ray Scanning
             </Link>
             <Link href="/testing/diamond" className="text-secondary hover:text-primary transition-colors">
