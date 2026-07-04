@@ -1,8 +1,22 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Diamond, CVD, HPHT & Simulant Testing | Authentic Gem Lab",
-  description: "Verify diamond authenticity, origin, and grade. Differentiate natural diamonds from lab-grown CVD & HPHT diamonds, and simulants like Moissanite, Cubic Zirconia, and White Sapphire.",
+export const dynamic = "force-static";
+
+export const metadata: Metadata = {
+  title: "CVD & Lab Grown Diamond Testing Laboratory Delhi | AGL",
+  description: "Delhi's leading certified diamond testing laboratory in Rohini. We perform spectroscopic CVD/HPHT lab grown diamond detection, 4C grading & simulant identification.",
+  alternates: {
+    canonical: "https://authenticgemlab.com/testing/diamond",
+  },
+  openGraph: {
+    title: "CVD & Lab Grown Diamond Testing Laboratory Delhi | AGL",
+    description: "Delhi's leading certified diamond testing laboratory in Rohini. We perform spectroscopic CVD/HPHT lab grown diamond detection, 4C grading & simulant identification.",
+    url: "https://authenticgemlab.com/testing/diamond",
+    siteName: "Authentic Gem Lab",
+    type: "website",
+    locale: "en_IN",
+  },
 };
 
 export default function DiamondTesting() {
@@ -13,14 +27,14 @@ export default function DiamondTesting() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="z-10 space-y-6 text-center lg:text-left">
             <span className="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2 block font-semibold">
-              Molecular Verification &amp; Simulant Identification
+              Delhi's Trusted CVD &amp; HPHT Detection Laboratory
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold text-on-surface leading-[1.15]">
-              Diamond<br />
-              <span className="italic text-primary">Testing & Verification</span>
+              CVD &amp; Lab-Grown <br />
+              <span className="italic text-primary">Diamond Testing Laboratory</span>
             </h1>
             <p className="text-base sm:text-lg text-secondary max-w-lg mx-auto lg:mx-0 leading-relaxed font-body">
-              Using advanced photoluminescence spectroscopy, thermal conductivity profiling, and microscopic analysis, we distinguish natural diamonds from laboratory-grown (CVD &amp; HPHT) diamonds and detect simulants like Moissanite, Cubic Zirconia, and White Sapphire.
+              Using advanced photoluminescence spectroscopy, FTIR analysis, and high-power digital microscopy, our certified <strong className="text-on-surface font-semibold text-primary">diamond testing laboratory in Delhi</strong> distinguishes natural diamonds from synthetic CVD/HPHT laboratory-grown diamonds and identifies simulants like Moissanite and Cubic Zirconia.
             </p>
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
               <Link
@@ -57,7 +71,7 @@ export default function DiamondTesting() {
           <div className="text-center mb-12 max-w-2xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-headline font-bold mb-4">Laboratory Diagnostic Suite</h2>
             <p className="text-secondary font-body text-sm sm:text-base">
-              While lab-grown diamonds share a chemical blueprint with natural stones, their crystal lattices retain distinct growth markers. Simulants differ entirely at the molecular level.
+              While lab-grown diamonds share an identical chemical blueprint with natural stones, their crystal lattices retain distinct growth markers. Simulants differ entirely at the molecular level. Our laboratory detects these microscopic variations.
             </p>
           </div>
 
@@ -70,7 +84,7 @@ export default function DiamondTesting() {
                 </div>
                 <h3 className="text-lg font-headline font-semibold text-on-surface">CVD &amp; HPHT Detection</h3>
                 <p className="text-secondary text-xs leading-relaxed font-body">
-                  We use Photoluminescence (PL) spectroscopy to detect silicon-vacancies (CVD) or metallic fluxes (HPHT), and DiamondView imaging to trace geometric growth patterns and phosphorescence.
+                  We use Photoluminescence (PL) spectroscopy to detect silicon-vacancies (CVD) or metallic fluxes (HPHT), and DiamondView ultraviolet imaging to trace geometric growth patterns and phosphorescence.
                 </p>
               </div>
               <span className="text-[10px] font-label uppercase tracking-widest font-bold text-primary mt-6">
@@ -134,7 +148,7 @@ export default function DiamondTesting() {
         <div className="text-center mb-12 max-w-2xl mx-auto">
           <h2 className="font-headline text-2xl sm:text-3xl font-semibold mb-4 text-on-surface">Diamond &amp; Simulant Verification Matrix</h2>
           <p className="text-secondary font-body text-sm sm:text-base">
-            Technical properties compared to establish absolute diagnostic certainty during analysis.
+            Technical properties compared to establish absolute diagnostic certainty during analysis at our Rohini laboratory.
           </p>
         </div>
 
@@ -205,7 +219,7 @@ export default function DiamondTesting() {
           <div className="w-full lg:w-1/2 relative order-2 lg:order-1 max-w-sm sm:max-w-md lg:max-w-none justify-self-center">
             <div className="relative z-10 border-[8px] sm:border-[12px] border-white shadow-2xl rounded-lg overflow-hidden">
               <img
-                alt="Certification process"
+                alt="Professional gemologist inspecting a diamond certificate inside our AGL lab"
                 className="w-full grayscale hover:grayscale-0 transition-all duration-1000"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBITJqgGR_cXP3HhyOaJvVZ6dt5DsNoCQmfUBa_TTq00cy_6GJBdyQo9HqRINV2BJqi1qplh-LHoexjr32gDuCOLXu8CV98KSu3d3ragFnXaS4TVe-06MAkjP-AwBKzsNDNu5PXGE1TZPEPUWU4-BVESi-Gjs7UgLfPlK8bFJ6_D1dPKa3owFaT4HaQlOj4IQNLDxA9nUwRygpoDaQcA6woADuuThcOSZfLHUJVJeyfPUX34R9YzbpOSdM4vII4j50Qf63d6c38ArU"
               />
@@ -221,7 +235,7 @@ export default function DiamondTesting() {
             <span className="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2 block font-semibold">
               The Ledger of Value
             </span>
-            <h2 className="text-3xl sm:text-4xl font-headline font-bold text-on-surface">Why Certification Matters</h2>
+            <h2 className="text-3xl sm:text-4xl font-headline font-bold text-on-surface">Why Diamond Certification Matters</h2>
 
             <div className="space-y-6 text-left">
               <div className="flex gap-4 sm:gap-6">
@@ -263,6 +277,144 @@ export default function DiamondTesting() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container-low border-t border-outline-variant/10">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-headline font-semibold mb-4 text-on-surface">Frequently Asked Questions</h2>
+            <p className="text-secondary font-body text-sm sm:text-base leading-relaxed">
+              Find answers to the most common queries regarding CVD/HPHT lab-grown diamond testing, 4C grading reports, and verification procedures.
+            </p>
+            <div className="w-20 h-[2px] bg-primary-container mx-auto mt-4"></div>
+          </div>
+
+          <div className="space-y-4">
+            {/* FAQ 1 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  What is the difference between a natural diamond and a lab-grown CVD/HPHT diamond?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                Natural diamonds crystallize deep in the Earth's mantle over millions of years under extreme heat and pressure. CVD (Chemical Vapor Deposition) and HPHT (High Pressure High Temperature) diamonds are grown in laboratories. While chemically, physically, and optically identical to natural diamonds, they have distinct microscopic growth lines, flux residues, and carbon patterns that AGL can identify.
+              </div>
+            </details>
+
+            {/* FAQ 2 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  How does AGL distinguish natural diamonds from CVD or HPHT lab-grown diamonds?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                Our Rohini diamond testing laboratory uses advanced diagnostics, including Photoluminescence (PL) spectroscopy to identify silicon-vacancy defects in CVD stones, ultraviolet fluorescence scans, and polariscope examinations to view the stress patterns and birefringence lines unique to natural growth.
+              </div>
+            </details>
+
+            {/* FAQ 3 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  Can a standard handheld diamond tester detect CVD or HPHT synthetic diamonds?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                No, standard handheld diamond testers (which measure thermal or electrical conductivity) will identify CVD and HPHT synthetic diamonds as "diamonds" because their carbon chemistry is identical to natural stones. Only laboratory-grade spectroscopic tools (like those in our AGL center) can definitively separate natural and synthetic stones.
+              </div>
+            </details>
+
+            {/* FAQ 4 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  What is included in an AGL Diamond Grading Report?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                Our diamond reports include a detailed 4C assessment: Cut grade, Color grade, Clarity classification, and exact Carat weight. Additionally, reports feature a plot diagram of inclusion types (feather, crystal, pin-point), ultraviolet fluorescence reactions, dimensional measurements, and a clear declaration of origin (Natural or Lab-Grown).
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "@id": "https://authenticgemlab.com/testing/diamond/#service",
+                "name": "CVD, HPHT & Lab Grown Diamond Testing",
+                "provider": {
+                  "@type": "GovernmentOffice",
+                  "name": "AGL Authentic Gem Lab",
+                  "url": "https://authenticgemlab.com",
+                  "logo": "https://authenticgemlab.com/logo.png"
+                },
+                "areaServed": "Delhi",
+                "description": "State-of-the-art diamond certification services at our Rohini laboratory, offering dynamic CVD/HPHT lab-grown diamond screening, 4C grading, and simulant verification."
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://authenticgemlab.com/testing/diamond/#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is the difference between a natural diamond and a lab-grown CVD/HPHT diamond?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Natural diamonds crystallize deep in the Earth's mantle over millions of years, while CVD and HPHT diamonds are laboratory-grown. Although chemically and physically identical, they contain distinct microscopic growth lines and carbon lattice patterns that AGL can identify."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How does AGL distinguish natural diamonds from CVD or HPHT lab-grown diamonds?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our Rohini diamond testing laboratory utilizes advanced Photoluminescence (PL) spectroscopy to identify silicon-vacancy defects in CVD diamonds, UV fluorescence imaging, and polariscope strain analysis to view natural growth markers."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can a standard handheld diamond tester detect CVD or HPHT synthetic diamonds?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "No, standard handheld conductivity testers identify CVD/HPHT synthetic diamonds as natural diamonds because they share carbon chemistry. Specialized spectroscopic and UV imaging laboratory equipment is required for definitive detection."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is included in an AGL Diamond Grading Report?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our diamond reports include a full 4C grading evaluation (Cut, Color, Clarity, Carat weight), dimensional measurements, ultraviolet fluorescence reactions, an inclusion plot diagram, and origin classification (Natural vs. Lab-Grown)."
+                    }
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
 
       {/* CTA Canvas */}
       <section className="mx-4 sm:mx-6">
