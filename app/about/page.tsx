@@ -28,7 +28,7 @@ export default function AboutHeritage() {
               <img
                 className="w-full h-full object-cover"
                 alt="Close-up of a vintage microscope reflecting a brilliant cut sapphire in an editorial laboratory setting"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWJrioXgL7js4L4CqziTpxkDMnHEKEz_U0pGoLp63_q48mFXI_y6UvUqF0ZomUZck98bu8aWHD4-_Le1sDEDfEjsTnq8aPOhpM1cKfgZygjoLbk9NIbcHbp36fSy8lN4AgnGJ6heODCoseEoevRd50XxKn2v1wSpqL7WZhVFdG9Bwh-w5y0iHs0YpfFLcfSQkCdW1cGPkrjsY5jmBccCj7YP_KmpFa08jTvWwGndyeQN9-u_tKXPaDp9J2BV7765WNBGAS_R2-rO0"
+                src="/group.jpg"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 w-40 h-40 border border-outline-variant/30 rounded-full z-0 opacity-40"></div>
@@ -45,7 +45,7 @@ export default function AboutHeritage() {
                 <img
                   className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 rounded"
                   alt="Monochrome editorial portrait of two visionary founders in minimalist linen attire"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDyFN9NgDxVKYgGtKsE8qFArj7CIJ7Uh35a-WLvFyERHxK6xgsTtMTVa7bQlQhJE27-TxPDGKBIkJB6BMUM7xLr3Mb0RHk9WDOXxSQC394r2wFTzMOdRX70US2WgaO-eB98tlfNN-N3JKSO1uz1CXOIQe27bHune8_ff4Wb9uaYvISuAnm8xuyKmjObI9FTMTylDGxZ3IdYp-YvB6l2S3Kn7GdUe5KwTQa1L7HKhG-YE-HBSXYJ7S-KfaA2loVvhrZzj1oZt-nYJY"
+                  src="/rohit.jpg"
                 />
               </div>
               <div className="absolute -top-8 -right-2 text-7xl sm:text-8xl font-headline text-outline-variant/10 select-none pointer-events-none font-bold">

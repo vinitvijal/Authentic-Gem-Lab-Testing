@@ -225,7 +225,7 @@ export default function Home() {
                   <img
                     className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                     alt="A close-up photograph of a sacred Rudraksha bead being scanned under digital X-ray imaging in a modern laboratory"
-                    src="/images/Rudraksha-testing.png"
+                    src="/images/rudraksh-testing.png"
                   />
                 </div>
               </div>

@@ -20,7 +20,7 @@ export default function Header() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="fixed top-0 w-full z-50 glass-nav shadow-[0_20px_40px_rgba(27,28,26,0.05)] border-b border-outline-variant/10">
+    <header className="fixed top-0 w-full z-50 bg-background shadow-[0_20px_40px_rgba(27,28,26,0.05)] border-b border-outline-variant/10">
       <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto">
         <Link href="/" className="text-lg sm:text-xl md:text-2xl font-bold tracking-tighter text-primary font-headline whitespace-nowrap">
           AGL Authentic Gem Lab

@@ -217,6 +217,81 @@ export default function ReportVerification() {
         </section>
       )}
 
+      {/* Hologram & Hallmark Verification Guide */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 mt-16">
+        <div className="bg-gradient-to-br from-surface-container-low to-surface-container-lowest border border-outline-variant/20 rounded-3xl p-6 sm:p-8 md:p-10 shadow-[0_15px_30px_rgba(0,0,0,0.02)] space-y-8 animate-fade-in">
+          {/* Header */}
+          <div className="text-center max-w-2xl mx-auto space-y-2">
+            <span className="text-[10px] font-label font-bold uppercase tracking-widest text-primary block">
+              Physical Security Verification
+            </span>
+            <h2 className="font-headline text-2xl sm:text-3xl font-bold text-on-surface">
+              Verify Official Hallmark Holograms
+            </h2>
+            <p className="font-body text-secondary text-xs sm:text-sm leading-relaxed">
+              To guarantee the authenticity of your physical AGL report, check for our official high-security 3D hologram stickers. Genuine certificates feature these tamper-proof seals on both sides.
+            </p>
+          </div>
+
+          {/* Full-width Image Container */}
+          <div className="relative group w-full">
+            <div className="absolute inset-0 bg-primary/5 rounded-2xl filter blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-[0_10px_20px_rgba(0,0,0,0.04)] border border-outline-variant/15 aspect-[16/9] md:aspect-[21/9] bg-stone-150 flex items-center justify-center">
+              <img
+                src="/images/hallmark.jpg"
+                alt="AGL Certificate Front and Back View Hallmark Hologram Guide"
+                className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-[1.01]"
+              />
+            </div>
+            <div className="absolute top-4 right-4 bg-surface-container-high/90 backdrop-blur-md px-3 py-1.5 rounded-lg border border-outline-variant/15 shadow-sm text-[10px] font-label font-bold uppercase tracking-wider text-primary flex items-center gap-1">
+              <span className="material-symbols-outlined text-xs">verified</span>
+              Security Standard
+            </div>
+          </div>
+
+          {/* Details below the image */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 pt-4">
+            <div className="md:col-span-8 space-y-4">
+              <h3 className="font-headline font-bold text-base text-on-surface">Key Inspection Checkpoints</h3>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-body">
+                <li className="flex items-start gap-2.5">
+                  <span className="material-symbols-outlined text-primary text-base shrink-0 mt-0.5">check_circle</span>
+                  <div>
+                    <strong className="text-on-surface block font-semibold text-xs sm:text-sm">Front View Hologram</strong>
+                    <span className="text-stone-500 text-xs">Positioned at the bottom-right edge of the certificate table (as indicated by the front arrow).</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <span className="material-symbols-outlined text-primary text-base shrink-0 mt-0.5">check_circle</span>
+                  <div>
+                    <strong className="text-on-surface block font-semibold text-xs sm:text-sm">Back View Hologram</strong>
+                    <span className="text-stone-500 text-xs">Positioned in the lower-middle portion of the certificate reverse (as indicated by the back arrow).</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-2.5 sm:col-span-2">
+                  <span className="material-symbols-outlined text-primary text-base shrink-0 mt-0.5">check_circle</span>
+                  <div>
+                    <strong className="text-on-surface block font-semibold text-xs sm:text-sm">Watermark &amp; Authorised Signature</strong>
+                    <span className="text-stone-500 text-xs">Check for the AGL logo and hand-signed verification from Rohit Aggarwal, Certified Gemmologist.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Warning Box */}
+            <div className="md:col-span-4 flex items-center">
+              <div className="bg-amber-50/50 border border-amber-200/50 rounded-2xl p-4 flex gap-3 text-stone-700 text-xs leading-normal h-full items-start">
+                <span className="material-symbols-outlined text-amber-600 text-lg shrink-0 mt-0.5">warning</span>
+                <div>
+                  <span className="font-semibold text-stone-800 block mb-1">Security Warning</span>
+                  Certificates without these original 3D hologram stickers, or containing photocopy replicas, are not legally recognized or valid.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SEO Friendly Content below the Verification tool */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 mt-20 border-t border-outline-variant/10 pt-16 space-y-12">
         <div className="text-center max-w-2xl mx-auto">
