@@ -1,8 +1,22 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Gold Purity Verification | Authentic Gem Lab",
-  description: "Verify the molecular composition and karatage of your gold. Professional XRF spectrometry, Fire Assay, and ultrasonic scanning for gold bars and jewelry at Authentic Gem Lab.",
+export const dynamic = "force-static";
+
+export const metadata: Metadata = {
+  title: "Gold Assaying & Hallmarking Laboratory Delhi | AGL",
+  description: "Delhi's leading government-approved gold testing laboratory in Rohini. We offer XRF spectrometry, chemical Fire Assay (cupellation) & bullion testing.",
+  alternates: {
+    canonical: "https://authenticgemlab.com/testing/gold",
+  },
+  openGraph: {
+    title: "Gold Assaying & Hallmarking Laboratory Delhi | AGL",
+    description: "Delhi's leading government-approved gold testing laboratory in Rohini. We offer XRF spectrometry, chemical Fire Assay (cupellation) & bullion testing.",
+    url: "https://authenticgemlab.com/testing/gold",
+    siteName: "Authentic Gem Lab",
+    type: "website",
+    locale: "en_IN",
+  },
 };
 
 export default function GoldTesting() {
@@ -13,14 +27,14 @@ export default function GoldTesting() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <span className="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2 block font-semibold">
-              Metallurgical Integrity
+              Metallurgical Integrity &amp; Purity Certification
             </span>
             <h1 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold text-on-surface leading-[1.15]">
-              Gold <br />
-              <span className="italic text-primary">Testing Laboratory</span>
+              Gold Testing <br />
+              <span className="italic text-primary">&amp; Assaying Laboratory</span>
             </h1>
             <p className="text-secondary text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-body">
-              We employ clinical-grade X-Ray Fluorescence (XRF) scanners and traditional chemical Fire Assay (cupellation) to certify your gold assets with absolute molecular precision at Authentic Gem Lab.
+              We employ clinical-grade X-Ray Fluorescence (XRF) scanners and traditional chemical Fire Assay (cupellation) methods to certify the purity of your gold assets. As Delhi's leading <strong className="text-on-surface font-semibold text-primary">gold testing laboratory in Rohini</strong>, we guarantee absolute precision for jewelry, bullion, and scrap.
             </p>
             <div className="flex justify-center lg:justify-start gap-4 pt-2">
               <Link
@@ -58,7 +72,7 @@ export default function GoldTesting() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="font-headline text-3xl sm:text-4xl font-semibold mb-4 text-on-surface">Scientific Assaying Methods</h2>
             <p className="font-body text-secondary text-sm sm:text-base">
-              A comprehensive three-stage testing system guarantees that every specimen is mapped inside and out.
+              Our gold assaying center Rohini utilizes a comprehensive three-stage testing system to guarantee that every gold specimen is mapped internally and externally.
             </p>
           </div>
 
@@ -118,7 +132,6 @@ export default function GoldTesting() {
       <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 max-w-5xl mx-auto">
         <h2 className="font-headline text-2xl sm:text-3xl font-semibold mb-8 text-center text-on-surface">Gold Karat Purity Standards</h2>
 
-        {/* Table wrapping custom typography with ghost borders and no-line spacing */}
         <div className="bg-surface-container-lowest rounded-3xl p-4 sm:p-6 md:p-8 shadow-sm border border-outline-variant/15">
           <div className="overflow-x-auto">
             <table className="w-full text-left font-body text-sm sm:text-base">
@@ -160,6 +173,144 @@ export default function GoldTesting() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container-low border-t border-outline-variant/10">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-headline font-semibold mb-4 text-on-surface">Frequently Asked Questions</h2>
+            <p className="text-secondary font-body text-sm sm:text-base leading-relaxed">
+              Find answers to common queries regarding gold hallmarking, purity certification, and metallurgical testing procedures.
+            </p>
+            <div className="w-20 h-[2px] bg-primary-container mx-auto mt-4"></div>
+          </div>
+
+          <div className="space-y-4">
+            {/* FAQ 1 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  How does AGL test the purity of gold?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                We perform gold purity scans using a dual-verification system. First, non-destructive X-Ray Fluorescence (XRF) spectrometry analyzes surface elemental compositions. Second, for legal valuation and complete accuracy, we execute Fire Assay cupellation, which completely isolates pure gold by smelting out base metals.
+              </div>
+            </details>
+
+            {/* FAQ 2 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  What is the difference between XRF spectrometry and Fire Assay?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                XRF spectrometry is a fast, 100% non-destructive scan that reads surface plating and alloys. However, it cannot penetrate deeply into thick gold bars. Fire Assay is a destructive chemical assaying method that smelt-purifies a tiny scraping of the gold specimen at 1050°C. It is the gold standard for global trading because it tests the core metal purity.
+              </div>
+            </details>
+
+            {/* FAQ 3 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  How does your Rohini lab detect tungsten and heavy-metal inserts in gold bars?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                Tungsten has an identical density to gold, meaning standard gravity balances cannot spot it. Our gold testing laboratory in Delhi utilizes advanced Ultrasonic Core Scanners. These propagate high-frequency sound waves through the metal, detecting acoustic mismatches at boundary interfaces created by internal tungsten or lead inserts.
+              </div>
+            </details>
+
+            {/* FAQ 4 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  What gold purity standards are tested at AGL?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                We test and certify all standard gold alloy grades, including 24K (999 Fine), 22K (916 Fine), 18K (750 Fine), and 14K (583 Fine) jewelry, bullion coins, raw scrap, and dental gold alloys.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "@id": "https://authenticgemlab.com/testing/gold/#service",
+                "name": "Gold Assaying & Hallmark Testing",
+                "provider": {
+                  "@type": "GovernmentOffice",
+                  "name": "AGL Authentic Gem Lab",
+                  "url": "https://authenticgemlab.com",
+                  "logo": "https://authenticgemlab.com/logo.png"
+                },
+                "areaServed": "Delhi",
+                "description": "Authorized gold assaying and purity verification in Rohini, Delhi. Specialized XRF scans, chemical Fire Assay cupellation, and ultrasonic tungsten core detection."
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://authenticgemlab.com/testing/gold/#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "How does AGL test the purity of gold?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "We test gold purity using a dual-verification system: surface XRF spectrometry scans followed by traditional cupellation Fire Assay chemical smelting for absolute core purity readings."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is the difference between XRF spectrometry and Fire Assay?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "XRF spectrometry is non-destructive and measures surface purity. Fire Assay chemically separates base metals from pure gold in a high-temperature furnace (1050°C), verifying core composition."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How does your Rohini lab detect tungsten and heavy-metal inserts in gold bars?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Since tungsten has a similar density to gold, we use Ultrasonic Core Scanners to propagate sound waves through the metal, spotting acoustic anomalies caused by internal foreign metal inserts."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What gold purity standards are tested at AGL?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "We certify all gold grades: 24K (999 Fine), 22K (916 Fine traditional Indian jewelry), 18K (750 Fine luxury diamonds), and 14K (583 Fine daily wear assets)."
+                    }
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
 
       {/* CTA section */}
       <section className="mx-4 sm:mx-6">
