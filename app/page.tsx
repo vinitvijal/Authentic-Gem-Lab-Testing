@@ -32,12 +32,12 @@ export default function Home() {
             </span>
           </div>
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-headline font-bold text-on-surface leading-[1.15] tracking-tight">
-            Authentic <br />
+            AGL Authentic <br />
             <span className="text-primary italic font-normal">Gem Laboratory</span> <br />
             &amp; Assaying Solutions
           </h1>
           <p className="text-base sm:text-lg text-secondary max-w-xl mx-auto lg:mx-0 font-body leading-relaxed">
-            Where empirical scientific precision meets trusted gemstone heritage. We provide definitive composition analysis and hallmark certification for Gold, Silver, Gemstones, Rudraksha, and Diamonds.
+            Where empirical scientific precision meets trusted gemstone heritage. As Delhi's premier ISO 9001:2015 certified <strong className="text-on-surface font-semibold text-primary">gemstone testing laboratory</strong> and gold assaying center, we provide definitive purity analysis, 4C diamond grading, and digital X-ray Rudraksha certification with absolute transparency.
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 pt-2">
@@ -92,9 +92,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-3xl sm:text-4xl font-headline font-semibold mb-4 text-on-surface">Our Testing Services</h2>
+              <h2 className="text-3xl sm:text-4xl font-headline font-semibold mb-4 text-on-surface">Certified Testing &amp; Assaying Services</h2>
               <p className="text-secondary font-body text-sm sm:text-base leading-relaxed">
-                Empirical assaying, spectroscopic analysis, and botanical verification mapping to identify true composition.
+                We offer government-approved gold testing, advanced gemstone authentication, digital radiography for Rudraksha, and complete diamond certification.
               </p>
             </div>
             <div className="text-left md:text-right shrink-0">
@@ -113,9 +113,9 @@ export default function Home() {
                     <div className="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
                       <span className="material-symbols-outlined text-3xl text-primary-container">science</span>
                     </div>
-                    <h3 className="text-xl sm:text-2xl font-headline font-bold text-on-surface">Gold Assaying &amp; Hallmarking</h3>
+                    <h3 className="text-xl sm:text-2xl font-headline font-bold text-on-surface">Gold Assaying &amp; Hallmarking Center</h3>
                     <p className="text-sm leading-relaxed text-secondary font-body">
-                      Precision XRF spectrometry and chemical Fire Assay cupellation to identify gold purity up to 99.99%. Hallmark verification for bars, jewelry, and scrap.
+                      Authorized gold testing and hallmarking solutions. We utilize state-of-the-art XRF spectrometry and traditional chemical Fire Assay cupellation to verify gold purity standards up to 99.99% and detect artificial iridium/ruthenium fills.
                     </p>
                   </div>
                   <div className="pt-2">
@@ -143,9 +143,9 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
                   <span className="material-symbols-outlined text-2xl">blur_on</span>
                 </div>
-                <h3 className="text-xl sm:text-2xl font-headline font-bold text-on-surface">Silver Testing</h3>
+                <h3 className="text-xl sm:text-2xl font-headline font-bold text-on-surface">Silver Purity Assaying</h3>
                 <p className="text-sm text-secondary font-body leading-relaxed">
-                  Testing for Sterling Silver standards (925) using electronic titration and non-destructive surface testing.
+                  Accurate Sterling Silver testing (925 purity standards) using electronic titration and non-destructive spectroscopic analysis to guarantee metal composition and prevent counterfeits.
                 </p>
                 <Link
                   href="/testing/silver"
@@ -169,9 +169,9 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
                   <span className="material-symbols-outlined text-2.5xl">diamond</span>
                 </div>
-                <h3 className="text-xl sm:text-2xl font-headline font-bold text-on-surface">Diamond Grading</h3>
+                <h3 className="text-xl sm:text-2xl font-headline font-bold text-on-surface">Diamond Certification &amp; Grading</h3>
                 <p className="text-sm text-secondary font-body leading-relaxed">
-                  Full 4C grading evaluation (Cut, Color, Clarity, Carat) and spectroscopic CVD/HPHT lab-grown checks.
+                  Comprehensive diamond grading (Cut, Color, Clarity, and Carat weight) and advanced spectroscopic testing to detect CVD, HPHT, and other synthetic lab-grown variants.
                 </p>
                 <Link
                   href="/testing/diamond"
@@ -193,9 +193,9 @@ export default function Home() {
             <div className="md:col-span-8 bg-primary text-white p-6 sm:p-8 rounded-3xl relative overflow-hidden group flex flex-col justify-between shadow-sm border border-primary/20">
               <div className="relative z-10 h-full flex flex-col justify-between">
                 <div className="max-w-md space-y-4">
-                  <h3 className="text-2xl sm:text-3xl font-headline font-bold">Gemstones &amp; Vedic Alignment</h3>
+                  <h3 className="text-2xl sm:text-3xl font-headline font-bold">Astrological Gemstone Certification</h3>
                   <p className="opacity-80 text-sm leading-relaxed font-body">
-                    Identifying treatment profiles (heating, glass-filling), natural origin, and mineral families. We certify suitability for astrological planetary alignment.
+                    Certified gemstone testing in Delhi for natural origin, treatment profiles (heating, glass-filling, diffusion), and mineral families. Verified for Vedic astrological planetary alignment (remedial Jyotish wear).
                   </p>
                   <div className="pt-2">
                     <Link
@@ -225,9 +225,9 @@ export default function Home() {
                       Botanical X-Ray Radiography
                     </span>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-headline font-bold text-on-surface">Rudraksha Mukhi Certification</h3>
+                  <h3 className="text-2xl sm:text-3xl font-headline font-bold text-on-surface">Rudraksha Mukhi &amp; Purity Verification</h3>
                   <p className="text-sm text-secondary font-body leading-relaxed">
-                    Rudraksha beads possess distinct facets (Mukhis). Our laboratory utilizes digital X-Ray imaging to check internal seed compartments, density scans to detect fake faces/glue modifications, and botanical testing to verify genuine Elaeocarpus ganitrus seeds.
+                    Scientific Rudraksha authentication using non-destructive digital X-ray radiography to verify internal seed compartments, specific gravity density scans to detect fake faces or glue joints, and botanical testing for genuine Elaeocarpus ganitrus seeds.
                   </p>
                   <div className="pt-2">
                     <Link
@@ -521,6 +521,50 @@ export default function Home() {
                     }
                   }
                 ]
+              },
+              {
+                "@type": "Service",
+                "@id": "https://authenticgemlab.com/#gold-assaying",
+                "name": "Gold Assaying & Hallmarking",
+                "provider": {
+                  "@type": "GovernmentOffice",
+                  "@id": "https://authenticgemlab.com/#organization"
+                },
+                "areaServed": "Delhi",
+                "description": "Authorized gold testing and hallmarking solutions using advanced XRF spectrometry and traditional chemical Fire Assay cupellation to verify purity up to 99.99%."
+              },
+              {
+                "@type": "Service",
+                "@id": "https://authenticgemlab.com/#gemstone-testing",
+                "name": "Gemstone Testing & Certification",
+                "provider": {
+                  "@type": "GovernmentOffice",
+                  "@id": "https://authenticgemlab.com/#organization"
+                },
+                "areaServed": "Delhi",
+                "description": "Certified gemstone testing in Delhi for natural origin, treatment profiles, and mineral families, verified for Vedic astrological planetary suitability."
+              },
+              {
+                "@type": "Service",
+                "@id": "https://authenticgemlab.com/#rudraksha-testing",
+                "name": "Rudraksha Mukhi Certification",
+                "provider": {
+                  "@type": "GovernmentOffice",
+                  "@id": "https://authenticgemlab.com/#organization"
+                },
+                "areaServed": "Delhi",
+                "description": "Scientific Rudraksha authentication using non-destructive digital X-ray radiography and specific gravity density scans to verify natural Elaeocarpus ganitrus seeds."
+              },
+              {
+                "@type": "Service",
+                "@id": "https://authenticgemlab.com/#diamond-testing",
+                "name": "Diamond Grading & Certification",
+                "provider": {
+                  "@type": "GovernmentOffice",
+                  "@id": "https://authenticgemlab.com/#organization"
+                },
+                "areaServed": "Delhi",
+                "description": "Comprehensive diamond grading (Cut, Color, Clarity, and Carat weight) and advanced spectroscopic testing to detect CVD/HPHT lab-grown synthetic variants."
               }
             ]
           })
