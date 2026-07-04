@@ -25,6 +25,12 @@
       "skillPath": "build/seo-content-writer/SKILL.md",
       "computedHash": "711d05fbdfae05741ae2f93627c39330e83840072dcc5a661a9d7e20d2e525eb"
     },
+    "seo-technical": {
+      "source": "agricidaniel/claude-seo",
+      "sourceType": "github",
+      "skillPath": "skills/seo-technical/SKILL.md",
+      "computedHash": "dded9cc0ab2484913d81cfb680085883a2de2588ce4e6c68c44a7502ae5cde05"
+    },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
       "sourceType": "github",
