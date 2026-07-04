@@ -1,4 +1,21 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AGL Authentic Gem Lab | Certified Gem, Gold, Silver & Diamond Testing Delhi",
+  description: "Delhi's trusted government-approved ISO 9001:2015 certified laboratory for Gold assaying, Silver testing, Diamond grading, Vedic Gemstones & Rudraksha authentication. Visit Rohini Sector-8 today.",
+  alternates: {
+    canonical: "https://authenticgemlab.com",
+  },
+  openGraph: {
+    title: "AGL Authentic Gem Lab | Certified Gem, Gold, Silver & Diamond Testing",
+    description: "ISO 9001:2015 certified testing for Gold, Silver, Gemstones, Rudraksha, and Diamonds in Rohini, Delhi.",
+    url: "https://authenticgemlab.com",
+    siteName: "Authentic Gem Lab",
+    type: "website",
+    locale: "en_IN",
+  },
+};
 
 export default function Home() {
   return (
@@ -214,7 +231,7 @@ export default function Home() {
                   </p>
                   <div className="pt-2">
                     <Link
-                      href="/testing/Rudraksha"
+                      href="/testing/rudraksha"
                       className="inline-flex items-center gap-2 px-6 py-3.5 bg-primary text-white rounded-xl font-headline font-semibold text-sm hover:opacity-90 transition-all shadow-md"
                     >
                       Authenticate Rudraksha <span className="material-symbols-outlined text-xs">arrow_forward</span>
@@ -342,6 +359,173 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container-low border-t border-outline-variant/10">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-headline font-semibold mb-4 text-on-surface">Frequently Asked Questions</h2>
+            <p className="text-secondary font-body text-sm sm:text-base leading-relaxed">
+              Common queries regarding our certified metal assaying, gemstone authentication, and digital radiography standards.
+            </p>
+            <div className="w-20 h-[2px] bg-primary-container mx-auto mt-4"></div>
+          </div>
+
+          <div className="space-y-4">
+            {/* FAQ 1 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  How accurate is gold purity testing at AGL?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                Our laboratory utilizes advanced XRF (X-ray Fluorescence) spectrometry and standard chemical Fire Assay cupellation methods to achieve an accuracy of up to 99.9%. We verify gold purity standards adhering strictly to Bureau of Indian Standards (BIS) and ISO 9001:2015 quality guidelines.
+              </div>
+            </details>
+
+            {/* FAQ 2 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  What tests are performed to certify a natural Rudraksha bead?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                We perform non-destructive Digital X-Ray Radiography to examine the internal compartment seeds (Mukhis) and check for artificial joints, glue modifications, or lead insertions. We also conduct density tests (specific gravity) and botanical scans to confirm it is a genuine Elaeocarpus ganitrus seed.
+              </div>
+            </details>
+
+            {/* FAQ 3 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  Do you test and grade lab-grown (CVD/HPHT) diamonds?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                Yes, our laboratory is equipped with spectroscopic analyzers to differentiate natural diamonds from lab-grown synthetics (including CVD and HPHT). We issue detailed 4C reports covering Cut, Color, Clarity, and Carat weight metrics in accordance with GIA international standards.
+              </div>
+            </details>
+
+            {/* FAQ 4 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  How can I verify the authenticity of an AGL certificate?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                Every certificate issued by AGL features a unique report number and high-resolution photographs of the tested specimen. You can instantly verify your report on our secure online registry at <Link href="/verify" className="text-primary hover:underline font-semibold">Verify Certificate</Link> by entering your certificate number.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "GovernmentOffice",
+                "@id": "https://authenticgemlab.com/#organization",
+                "name": "AGL Authentic Gem Lab",
+                "url": "https://authenticgemlab.com",
+                "logo": "https://authenticgemlab.com/logo.png",
+                "image": "https://authenticgemlab.com/images/rudraksh-testing.png",
+                "description": "Authentic Gem Lab (AGL) in Delhi provides certified, ISO 9001:2015 accredited testing for Gold, Silver, Gemstones, Rudraksha, and Diamonds using state-of-the-art XRF spectrometry, X-ray scanning, and 4C grading.",
+                "telephone": "+91-9643210025",
+                "email": "authenticgemlab@gmail.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Shop No. 6, DDA Market, CSC-IV, Pocket C-8, Sector-8, Rohini",
+                  "addressLocality": "Delhi",
+                  "postalCode": "110085",
+                  "addressCountry": "IN"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 28.702987,
+                  "longitude": 77.135245
+                },
+                "openingHoursSpecification": {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                  ],
+                  "opens": "11:00",
+                  "closes": "20:00"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+91-9643210025",
+                  "contactType": "customer service",
+                  "availableLanguage": "English, Hindi"
+                }
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://authenticgemlab.com/#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "How accurate is gold purity testing at AGL?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our laboratory utilizes advanced XRF (X-ray Fluorescence) spectrometry and standard chemical Fire Assay cupellation methods to achieve an accuracy of up to 99.9%. We verify gold purity standards adhering strictly to Bureau of Indian Standards (BIS) and ISO 9001:2015 quality guidelines."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What tests are performed to certify a natural Rudraksha bead?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "We perform non-destructive Digital X-Ray Radiography to examine the internal compartment seeds (Mukhis) and check for artificial joints, glue modifications, or lead insertions. We also conduct density tests (specific gravity) and botanical scans to confirm it is a genuine Elaeocarpus ganitrus seed."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do you test and grade lab-grown (CVD/HPHT) diamonds?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, our laboratory is equipped with spectroscopic analyzers to differentiate natural diamonds from lab-grown synthetics (including CVD and HPHT). We issue detailed 4C reports covering Cut, Color, Clarity, and Carat weight metrics in accordance with GIA international standards."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How can I verify the authenticity of an AGL certificate?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Every certificate issued by AGL features a unique report number and high-resolution photographs of the tested specimen. You can instantly verify your report on our secure online registry at Verify Certificate by entering your certificate number."
+                    }
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
 
       {/* CTA Section */}
       <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container border-t border-outline-variant/10">
