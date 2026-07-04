@@ -1,26 +1,40 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Lunar Silver Verification | Authentic Gem Lab",
-  description: "Sterling silver testing and hallmark verification. Traditional fire assay, chemical spot analysis, and XRF scan for silverware and bullion at Authentic Gem Lab.",
+export const dynamic = "force-static";
+
+export const metadata: Metadata = {
+  title: "Silver Purity Testing & Certification Delhi | AGL",
+  description: "Delhi's trusted silver testing laboratory in Rohini. We provide sterling silver (925) hallmarking, XRF spectrometry scans & chemical assaying services.",
+  alternates: {
+    canonical: "https://authenticgemlab.com/testing/silver",
+  },
+  openGraph: {
+    title: "Silver Purity Testing & Certification Delhi | AGL",
+    description: "Delhi's trusted silver testing laboratory in Rohini. We provide sterling silver (925) hallmarking, XRF spectrometry scans & chemical assaying services.",
+    url: "https://authenticgemlab.com/testing/silver",
+    siteName: "Authentic Gem Lab",
+    type: "website",
+    locale: "en_IN",
+  },
 };
 
 export default function SilverTesting() {
   return (
     <div className="pt-10 pb-20">
-      {/* Hero Section: Editorial Asymmetry */}
+      {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-16 mt-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <span className="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2 block font-semibold">
-              Scientific Precision
+              Scientific Precision &amp; Purity Certification
             </span>
             <h1 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold text-on-surface leading-[1.15]">
               Silver Purity <br />
-              <span className="italic text-primary">Testing Laboratory</span>
+              <span className="italic text-primary">&amp; Testing Laboratory</span>
             </h1>
             <p className="text-secondary text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-body">
-              Employing high-frequency X-Ray Fluorescence (XRF) and traditional Fire Assay techniques to certify the molecular integrity of your silver assets with 99.99% accuracy at Authentic Gem Lab.
+              Employing high-frequency X-Ray Fluorescence (XRF) and traditional chemical Fire Assay techniques to certify the molecular integrity of your silver assets. As the leading <strong className="text-on-surface font-semibold text-primary">silver testing laboratory in Delhi</strong>, we verify purity levels up to 99.99% accuracy at our Rohini center.
             </p>
             <div className="flex justify-center lg:justify-start gap-4 pt-2">
               <Link
@@ -64,7 +78,7 @@ export default function SilverTesting() {
           <div className="mb-12 text-center max-w-2xl mx-auto">
             <h2 className="font-headline text-3xl sm:text-4xl font-semibold mb-4 text-on-surface">Purity Methodologies</h2>
             <p className="font-body text-secondary text-sm sm:text-base">
-              Our laboratory utilizes a dual-verification process to ensure commercial and investment grade compliance.
+              Our silver testing center Rohini utilizes a dual-verification process to ensure commercial and investment grade compliance.
             </p>
           </div>
 
@@ -187,7 +201,7 @@ export default function SilverTesting() {
             </div>
           </div>
           
-          <div className="flex-1 order-1 lg:order-2 relative w-full max-w-sm sm:max-w-md lg:max-w-none">
+          <div className="flex-1 order-1 lg:order-2 relative w-full max-w-sm sm:max-w-md lg:max-w-none justify-self-center">
             <div className="relative z-10 p-4 bg-white shadow-2xl rounded-2xl rotate-3 transform border border-outline-variant/10">
               <img
                 className="rounded-xl w-full"
@@ -199,6 +213,144 @@ export default function SilverTesting() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container-low border-t border-outline-variant/10">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-headline font-semibold mb-4 text-on-surface">Frequently Asked Questions</h2>
+            <p className="text-secondary font-body text-sm sm:text-base leading-relaxed">
+              Find answers to common queries regarding silver hallmarking, 925 sterling purity tests, and chemical assaying.
+            </p>
+            <div className="w-20 h-[2px] bg-primary-container mx-auto mt-4"></div>
+          </div>
+
+          <div className="space-y-4">
+            {/* FAQ 1 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  How is silver purity tested at AGL?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                We verify silver purity using non-destructive X-Ray Fluorescence (XRF) spectrometry for surface alloys and traditional chemical Fire Assay (cupellation at 980°C) for complete core verification. Hydrostatic balances are also used to test internal densities on larger bullion pieces.
+              </div>
+            </details>
+
+            {/* FAQ 2 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  What are the common purity standards for silver assets?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                The most common standard is Sterling Silver (92.5% pure silver, often marked as 925). We also test Fine Silver (99.9% pure, marked as 999) typically used in investment bullion bars, and lower purity silverware grades ranging down to 80% purity.
+              </div>
+            </details>
+
+            {/* FAQ 3 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  Can XRF testing detect heavy-metal plating on silverware?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                Handheld XRF scans read surface depths up to a few microns. If a brass or copper base is thickly plated with sterling silver, XRF alone might misidentify it. To check for internal metals, our silver testing laboratory in Delhi uses hydrostatic specific gravity density measurements and, when necessary, micro-scraping tests.
+              </div>
+            </details>
+
+            {/* FAQ 4 */}
+            <details className="group bg-surface-container-lowest rounded-2xl border border-outline-variant/15 p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between cursor-pointer list-none focus:outline-none">
+                <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface pr-4">
+                  Do you test antique silverware and heritage coins?
+                </h3>
+                <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                  keyboard_arrow_down
+                </span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-outline-variant/10 text-sm sm:text-base text-secondary font-body leading-relaxed">
+                Yes, we perform specialized non-destructive tests (spectrometry, density balance, and spot chemical tests) designed specifically to check antique heritage silver pieces, utensils, ornaments, and old currency coins without damaging their historical value.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "@id": "https://authenticgemlab.com/testing/silver/#service",
+                "name": "Silver Purity Testing & Hallmarking",
+                "provider": {
+                  "@type": "GovernmentOffice",
+                  "name": "AGL Authentic Gem Lab",
+                  "url": "https://authenticgemlab.com",
+                  "logo": "https://authenticgemlab.com/logo.png"
+                },
+                "areaServed": "Delhi",
+                "description": "Professional silver purity verification in Rohini, Delhi. Includes sterling silver 925 hallmarking, XRF spectrometry analysis, and Fire Assay chemical smelting."
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://authenticgemlab.com/testing/silver/#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "How is silver purity tested at AGL?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "We test silver purity using non-destructive XRF spectrometry, hydrostatic specific gravity balances for bullion bars, and high-precision cupellation Fire Assays for certified chemical purification."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What are the common purity standards for silver assets?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Common standards are Sterling Silver (92.5% purity, marked as 925) for jewelry and utensils, and Fine Silver (99.9% purity, marked as 999) for investment bars."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can XRF testing detect heavy-metal plating on silverware?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "XRF is a surface-level scan. To detect base metals thickly plated with silver, we combine XRF with specific gravity density measurements and micro-scraping assays."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do you test antique silverware and heritage coins?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, we execute specialized non-destructive tests (spectroscopic scans, density balance, and legacy spot chemical analyses) to certify heritage artifacts without damaging them."
+                    }
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
 
       {/* Trust Stats */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-16">
