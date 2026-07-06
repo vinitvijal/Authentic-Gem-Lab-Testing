@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Authentic Gem Lab</string>
+    <string name="title_activity_main">Authentic Gem Lab</string>
+    <string name="package_name">com.authenticgemlab.testing</string>
+    <string name="custom_url_scheme">com.authenticgemlab.testing</string>
+</resources>

@@ -3,6 +3,7 @@ import { Noto_Serif, Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import IonicProvider from "./components/IonicProvider";
 
 const notoSerif = Noto_Serif({
   variable: "--font-noto-serif",
@@ -41,10 +42,13 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-background text-on-surface font-body">
-        <Header />
-        <main className="flex-grow pt-20">{children}</main>
-        <Footer />
+        <IonicProvider>
+          <Header />
+          <main className="flex-grow pt-20">{children}</main>
+          <Footer />
+        </IonicProvider>
       </body>
     </html>
   );
 }
+

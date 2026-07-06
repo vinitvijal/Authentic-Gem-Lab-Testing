@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Capacitor } from "@capacitor/core";
 
 export default function IntakeForm() {
   const [name, setName] = useState("");
@@ -18,7 +19,11 @@ export default function IntakeForm() {
     const messageContent = `Category: ${category}\nFacility: ${facility}\n\nDetails:\n${details || "No additional comments"}`;
 
     try {
-      const res = await fetch("/api/contact", {
+      const apiUrl = Capacitor.isNativePlatform()
+        ? "https://authenticgemlab.com/api/contact"
+        : "/api/contact";
+
+      const res = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
