@@ -109,26 +109,26 @@ export default function VerifyClient() {
       </section>
 
       {/* Input Verification Form */}
-      <section className="max-w-2xl mx-auto px-4 sm:px-6 md:px-8 mt-12">
-        <div className="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 shadow-sm border border-outline-variant/15">
-          <form onSubmit={handleVerify} className="space-y-6">
+      <section className="max-w-2xl mx-auto px-4 sm:px-6 md:px-8 mt-8">
+        <div className="bg-surface-container-lowest rounded-3xl p-5 sm:p-8 shadow-[0_10px_30px_rgba(27,28,26,0.02)] border border-outline-variant/15">
+          <form onSubmit={handleVerify} className="space-y-5">
             <div>
-              <label className="block text-stone-700 font-semibold mb-2 font-body text-sm">
+              <label className="block text-[11px] font-label font-bold uppercase tracking-wider text-outline mb-1.5 pl-1">
                 Enter Certificate / Report ID
               </label>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <input
                   type="text"
                   value={reportId}
                   onChange={(e) => setReportId(e.target.value)}
                   placeholder="e.g. AGL-303-Rudraksha, AGL-101-GOLD"
-                  className="flex-grow bg-surface-container-low border border-transparent rounded-lg px-4 py-3 focus:bg-surface-container-lowest focus:border-primary outline-none transition-all font-mono uppercase text-sm"
+                  className="flex-grow h-12 bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-2 text-base md:text-sm focus:bg-surface-container-lowest focus:border-primary outline-none transition-all font-mono uppercase"
                   required
                 />
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="bg-primary text-white px-8 py-3 rounded-lg font-headline font-semibold text-sm hover:opacity-90 active:scale-95 transition-all cursor-pointer flex items-center justify-center gap-2 whitespace-nowrap shadow-sm"
+                  className="h-12 bg-primary text-white px-8 rounded-xl font-headline font-bold text-base hover:opacity-90 active:scale-98 transition-all cursor-pointer flex items-center justify-center gap-2 whitespace-nowrap shadow-sm w-full sm:w-auto"
                 >
                   {isLoading ? (
                     <>
@@ -137,7 +137,7 @@ export default function VerifyClient() {
                     </>
                   ) : (
                     <>
-                      <span className="material-symbols-outlined text-lg">verified_user</span>
+                      <span className="material-symbols-outlined text-xl">verified_user</span>
                       <span>Verify Report</span>
                     </>
                   )}
@@ -145,8 +145,8 @@ export default function VerifyClient() {
               </div>
             </div>
 
-            <div className="text-[11px] text-stone-500 font-body leading-normal">
-              <strong>Sample IDs to test:</strong> <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[10px] text-primary">AGL-101-GOLD</code>, <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[10px] text-primary">AGL-202-DIAMOND</code>, <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[10px] text-primary">AGL-303-Rudraksha</code>
+            <div className="text-[10px] text-stone-500 font-body leading-normal pl-1">
+              <strong>Sample IDs to test:</strong> <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[9px] text-primary">AGL-101-GOLD</code>, <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[9px] text-primary">AGL-202-DIAMOND</code>, <code className="bg-surface-container-low px-1.5 py-0.5 rounded font-mono text-[9px] text-primary">AGL-303-Rudraksha</code>
             </div>
           </form>
         </div>
@@ -154,52 +154,52 @@ export default function VerifyClient() {
 
       {/* Result Display Section */}
       {searched && (
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 md:px-8 mt-12 animate-fade-in">
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 md:px-8 mt-10 animate-fade-in">
           {isLoading ? (
-            <div className="bg-surface-container-lowest rounded-3xl p-12 text-center border border-outline-variant/15 shadow-sm space-y-4">
-              <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto"></div>
-              <p className="text-secondary font-headline text-lg italic">Accessing AGL Secure Ledger database...</p>
+            <div className="bg-surface-container-lowest rounded-3xl p-10 text-center border border-outline-variant/15 shadow-sm space-y-4">
+              <div className="w-10 h-10 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto"></div>
+              <p className="text-secondary font-headline text-base italic">Accessing AGL Secure Ledger database...</p>
             </div>
           ) : report ? (
-            <div className="bg-surface-container-lowest rounded-3xl border border-outline-variant/15 shadow-[0_20px_40px_rgba(27,28,26,0.03)] overflow-hidden">
-              <div className="bg-primary/5 px-6 py-4 border-b border-outline-variant/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <div className="bg-surface-container-lowest rounded-3xl border border-outline-variant/15 shadow-[0_15px_35px_rgba(27,28,26,0.03)] overflow-hidden">
+              <div className="bg-primary/5 px-5 py-4 border-b border-outline-variant/15 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
                 <div>
-                  <span className="text-[10px] font-label font-bold uppercase tracking-widest text-primary block">AGL Official Registry Record</span>
+                  <span className="text-[9px] font-label font-bold uppercase tracking-widest text-primary block">AGL Official Registry Record</span>
                   <span className="font-mono font-bold text-on-surface text-base">{report.id}</span>
                 </div>
-                <div className="flex items-center gap-1.5 px-3 py-1 bg-green-50 text-green-700 rounded-full font-label text-[10px] font-bold uppercase tracking-widest border border-green-200">
-                  <span className="material-symbols-outlined text-sm">check_circle</span>
+                <div className="flex items-center gap-1 px-3 py-1 bg-green-50 text-green-700 rounded-full font-label text-[9px] font-bold uppercase tracking-widest border border-green-200">
+                  <span className="material-symbols-outlined text-xs">check_circle</span>
                   <span>Verified Genuine</span>
                 </div>
               </div>
 
-              <div className="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="p-5 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                 {/* Certificate Details */}
-                <div className="space-y-4 font-body text-sm">
-                  <div className="pb-3 border-b border-outline-variant/10">
-                    <span className="text-stone-500 text-xs block">Specimen Category</span>
-                    <span className="font-semibold text-on-surface">{report.category}</span>
+                <div className="space-y-3.5 font-body text-sm">
+                  <div className="pb-2.5 border-b border-outline-variant/10">
+                    <span className="text-[10px] font-label font-bold uppercase tracking-wider text-outline mb-0.5 block">Specimen Category</span>
+                    <span className="font-semibold text-on-surface text-sm sm:text-base">{report.category}</span>
                   </div>
-                  <div className="pb-3 border-b border-outline-variant/10">
-                    <span className="text-stone-500 text-xs block">Assay Purity / Quality Grade</span>
-                    <span className="font-semibold text-primary">{report.purity}</span>
+                  <div className="pb-2.5 border-b border-outline-variant/10">
+                    <span className="text-[10px] font-label font-bold uppercase tracking-wider text-outline mb-0.5 block">Assay Purity / Quality Grade</span>
+                    <span className="font-semibold text-primary text-sm sm:text-base">{report.purity}</span>
                   </div>
-                  <div className="pb-3 border-b border-outline-variant/10">
-                    <span className="text-stone-500 text-xs block">Official Weight</span>
-                    <span className="font-semibold text-on-surface">{report.weight}</span>
+                  <div className="pb-2.5 border-b border-outline-variant/10">
+                    <span className="text-[10px] font-label font-bold uppercase tracking-wider text-outline mb-0.5 block">Official Weight</span>
+                    <span className="font-semibold text-on-surface text-sm sm:text-base">{report.weight}</span>
                   </div>
-                  <div className="pb-3 border-b border-outline-variant/10">
-                    <span className="text-stone-500 text-xs block">Date of Certification</span>
-                    <span className="font-semibold text-on-surface">{report.date}</span>
+                  <div className="pb-2.5 border-b border-outline-variant/10">
+                    <span className="text-[10px] font-label font-bold uppercase tracking-wider text-outline mb-0.5 block">Date of Certification</span>
+                    <span className="font-semibold text-on-surface text-sm sm:text-base">{report.date}</span>
                   </div>
                   <div>
-                    <span className="text-stone-500 text-xs block">Laboratory Comments</span>
-                    <p className="text-secondary text-xs leading-relaxed mt-1">{report.comments}</p>
+                    <span className="text-[10px] font-label font-bold uppercase tracking-wider text-outline mb-0.5 block">Laboratory Comments</span>
+                    <p className="text-secondary text-xs leading-relaxed mt-1 font-body">{report.comments}</p>
                   </div>
                 </div>
 
                 {/* Specimen Response Image */}
-                <div className="space-y-4">
+                <div className="space-y-3">
                   <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow border border-outline-variant/15 relative bg-background flex items-center justify-center">
                     <img
                       src={report.imageUrl}
@@ -207,7 +207,7 @@ export default function VerifyClient() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <p className="text-[10px] text-stone-500 text-center font-body italic leading-normal">
+                  <p className="text-[9px] text-stone-500 text-center font-body italic leading-normal">
                     Photograph of specimen submitted and archived on {report.date}
                   </p>
                 </div>

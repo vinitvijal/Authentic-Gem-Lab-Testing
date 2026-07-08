@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="relative overflow-hidden">
       {/* Hero Section */}
-      <section className="relative px-4 sm:px-6 md:px-8 py-10 md:py-16 lg:py-20 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+      <section className="relative px-4 sm:px-6 md:px-8 pt-6 pb-10 md:py-16 lg:py-20 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         <div className="absolute inset-0 alchemical-mandala pointer-events-none -z-10"></div>
 
         <div className="flex-grow space-y-6 z-10 w-full lg:w-3/5 text-center lg:text-left">
@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Services Section: Bento Grid */}
-      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container-low border-y border-outline-variant/10">
+      <section className="py-10 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container-low border-y border-outline-variant/10">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
             <div className="max-w-2xl">
@@ -207,7 +207,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="absolute right-0 bottom-0 top-0 w-1/2 opacity-30 md:opacity-40 group-hover:opacity-50 transition-opacity">
+              <div className="absolute right-0 bottom-0 top-0 w-1/2 opacity-20 md:opacity-40 group-hover:opacity-50 transition-opacity">
                 <img
                   className="w-full h-full object-cover"
                   alt="Raw multi-colored gemstones emeralds and rubies on laboratory tray"
@@ -252,8 +252,8 @@ export default function Home() {
       </section>
 
       {/* Trust Stats */}
-      <section className="py-12 md:py-16 px-4 max-w-7xl mx-auto">
-        <div className="bg-surface-container-highest rounded-3xl p-8 md:p-12 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center border border-outline-variant/20 shadow-sm">
+      <section className="py-8 md:py-16 px-4 max-w-7xl mx-auto">
+        <div className="bg-surface-container-highest rounded-3xl p-6 md:p-12 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 text-center border border-outline-variant/20 shadow-sm">
           <div>
             <div className="text-3xl sm:text-4xl font-headline font-bold text-primary mb-1">45k+</div>
             <div className="font-label text-[9px] sm:text-[10px] uppercase tracking-widest font-bold text-outline">
@@ -282,7 +282,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto border-t border-outline-variant/10">
+      <section className="py-10 md:py-20 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto border-t border-outline-variant/10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-headline font-semibold mb-4 text-on-surface">Client Reviews</h2>
           <div className="w-20 h-[2px] bg-primary-container mx-auto"></div>
@@ -361,7 +361,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container-low border-t border-outline-variant/10">
+      <section className="py-10 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container-low border-t border-outline-variant/10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-headline font-semibold mb-4 text-on-surface">Frequently Asked Questions</h2>
@@ -572,8 +572,8 @@ export default function Home() {
       />
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container border-t border-outline-variant/10">
-        <div className="max-w-5xl mx-auto bg-surface-container-lowest shadow-[0_20px_40px_rgba(27,28,26,0.04)] border border-outline-variant/15 rounded-3xl p-8 sm:p-12 lg:p-20 text-center relative overflow-hidden">
+      <section className="py-10 md:py-20 px-4 sm:px-6 md:px-8 bg-surface-container border-t border-outline-variant/10">
+        <div className="max-w-5xl mx-auto bg-surface-container-lowest shadow-[0_20px_40px_rgba(27,28,26,0.04)] border border-outline-variant/15 rounded-3xl p-6 sm:p-12 lg:p-20 text-center relative overflow-hidden">
           <div className="absolute inset-0 alchemical-mandala opacity-10"></div>
           <div className="relative z-10 space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold text-on-surface">Begin Your Laboratory Analysis</h2>

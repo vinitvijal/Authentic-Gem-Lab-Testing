@@ -3,7 +3,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full border-t border-outline-variant/20 bg-background/50">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-8 md:px-12 py-16 max-w-7xl mx-auto">
+      {/* Desktop Grid Footer */}
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-12 px-8 md:px-12 py-16 max-w-7xl mx-auto">
         <div className="space-y-6">
           <div className="text-xl font-bold tracking-tighter text-primary font-headline">
             AGL Authentic Gem Lab
@@ -69,9 +70,24 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-8 md:px-12 py-8 border-t border-outline-variant/10 text-center">
-        <p className="text-secondary font-label text-[10px] uppercase tracking-[0.1em]">
-          © {new Date().getFullYear()} Authentic Gem Lab. All Rights Reserved. ISO 9001:2015 & GIA Standardized Guidelines.
+      {/* Mobile-only Compact Footer Info */}
+      <div className="block md:hidden px-6 py-8 text-center space-y-4 font-body border-b border-outline-variant/10">
+        <div className="text-lg font-bold tracking-tight text-primary font-headline">
+          AGL Authentic Gem Lab
+        </div>
+        <p className="text-secondary text-xs leading-relaxed max-w-xs mx-auto">
+          Delhi's premier ISO 9001:2015 certified laboratory for Gold assaying, gemstone authentication, and digital X-ray scans.
+        </p>
+        <div className="text-[11px] text-secondary space-y-1.5 pt-2">
+          <p><strong>Owner / Director:</strong> Rohit Aggarwal</p>
+          <p><strong>Direct Helpline:</strong> <a href="tel:9643210025" className="text-primary hover:underline font-semibold">9643210025</a></p>
+          <p><strong>Address:</strong> Rohini Sector-8, Delhi - 110085 (opp. Gurudwara)</p>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-6 text-center">
+        <p className="text-secondary font-label text-[9px] sm:text-[10px] uppercase tracking-[0.1em] leading-relaxed">
+          © {new Date().getFullYear()} Authentic Gem Lab. All Rights Reserved.<br className="block sm:hidden" /> ISO 9001:2015 & GIA Standardized Guidelines.
         </p>
       </div>
     </footer>
