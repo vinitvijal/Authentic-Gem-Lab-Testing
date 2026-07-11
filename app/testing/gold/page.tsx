@@ -57,7 +57,7 @@ export default function GoldTesting() {
               <img
                 className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
                 alt="Macro shot of pure gold bars stacked under bright clinical laboratory lighting"
-                src="/gold.jpg"
+                src="/rohit_3.jpeg"
               />
             </div>
             {/* Decorative Element */}

@@ -70,7 +70,7 @@ export default function Home() {
             <img
               className="w-full h-full object-cover"
               alt="High-end close-up of a raw diamond being inspected with a professional magnifying loupe under clinical laboratory lighting"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeMpQIll74JNTRd9ykbncybHTwz5IfqXyTPmT_uNhkFvC-wn6pGvuVi9KduqvwzB9Zftd2pi5QTKUouxMnTrZedpjBXHwjgSbg_HqgMvCNKAlCqrGg00UF51WzYzrrUJzj63fEqKXaGTYTLV5jDZWVuOj174frTp0zBqScDSSdP0eq3-wB-nUIJB5JDNg5RJiow99hRilydtHOlmpsi-Z7EqgWzwxegptLUP8n6zR20_oDJYsduZB6gnhCFRP9d7VaT2wUbUCizDM"
+              src="/rohit_1.jpeg"
             />
           </div>
           {/* Floating Decorative Element */}

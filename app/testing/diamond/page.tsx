@@ -58,7 +58,7 @@ export default function DiamondTesting() {
               <img
                 alt="Macro view of a brilliant-cut diamond placed on a testing stage in a gemstone analysis laboratory being scanned by a spectrometer laser"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
-                src="/images/smartpro-aura.png"
+                src="/rohit_2.jpeg"
               />
             </div>
           </div>

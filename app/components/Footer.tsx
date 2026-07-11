@@ -71,7 +71,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-8 md:px-12 py-8 border-t border-outline-variant/10 text-center">
         <p className="text-secondary font-label text-[10px] uppercase tracking-[0.1em]">
-          © {new Date().getFullYear()} Authentic Gem Lab. All Rights Reserved. ISO 9001:2015 & GIA Standardized Guidelines.
+          <span className="font-bold">© {new Date().getFullYear()} Authentic Gem Lab</span>. All Rights Reserved. <span className="w-10"></span> <span className="text-primary">Design & Developed by <Link href="https://www.qodeml.com" target="_blank" className="font-bold">QodeML Labs</Link></span>
         </p>
       </div>
     </footer>

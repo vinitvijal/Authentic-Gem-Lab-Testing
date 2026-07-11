@@ -55,7 +55,7 @@ export default function SilverTesting() {
           <div className="lg:col-span-5 relative w-full max-w-sm sm:max-w-md lg:max-w-none justify-self-center">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10 group border border-outline-variant/15">
               <img
-                className="w-full h-full object-cover grayscale brightness-110 group-hover:scale-103 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
                 alt="Macro shot of a pure silver bar under bright clinical laboratory lighting"
                 src="/rohit_8.jpeg"
               />

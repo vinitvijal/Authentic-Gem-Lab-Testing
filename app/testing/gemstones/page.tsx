@@ -57,7 +57,7 @@ export default function GemstonesTesting() {
               <img
                 className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
                 alt="Intricate arrangement of emeralds and sapphires on laboratory analysis tray"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTZTLY3hDqVj1ImxKmm1WIK444jDLXUH8172p8VpFFWBL2EMBNlr-bC1j5cSk2Jhru1GeBFsziXATK7VZbJF7lebOjmUtCVi_1HcjQgTs_Il2-qJtPT825ysP060vR5yzLN2AKPViscsA1Ss75iRWumGX58iiA657Y7GxSmoxvNHhBkLk8CWDUyx0qvkNEAes9NL2k7VvhFocLWFCrgv5h4AUE_Cxut0Gd-Wl5rFqmQ4WuTZOPY47M8RZJtJFJYcOP9vWQZMQIg_w"
+                src="/rohit_6.jpeg"
               />
             </div>
             {/* Decorative Element */}
