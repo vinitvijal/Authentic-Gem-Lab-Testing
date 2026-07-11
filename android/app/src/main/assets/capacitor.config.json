@@ -1,0 +1,8 @@
+{
+	"appId": "com.authenticgemlab.testing",
+	"appName": "Authentic Gem Lab",
+	"webDir": "out",
+	"server": {
+		"androidScheme": "https"
+	}
+}

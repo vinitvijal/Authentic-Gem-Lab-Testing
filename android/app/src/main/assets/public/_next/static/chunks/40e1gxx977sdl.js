@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,60329,e=>{"use strict";var t=e.i(29371);e.i(28349),e.s(["createGesture",()=>t.createGesture])}]);

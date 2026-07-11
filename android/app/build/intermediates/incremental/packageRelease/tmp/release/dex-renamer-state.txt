@@ -1,0 +1,4 @@
+#Wed Jul 08 15:40:03 IST 2026
+base.0=/Users/vinu/Documents/Authentic-Gem-Lab-Testing/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

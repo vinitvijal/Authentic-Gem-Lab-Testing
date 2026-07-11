@@ -1,0 +1,6 @@
+:HL["/_next/static/chunks/2dl0wpe0kfi4-.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block","style"]
+:HL["/group.jpg","image"]
+:HL["/rohit.jpg","image"]
+:HL["https://lh3.googleusercontent.com/aida-public/AB6AXuBEywHZwMLhgVn4AHhVFh6GQMZ6dmMWPjWbT0eNVvY65UzsOgPcQFsSYOoMN2wX6wsrSB_XLv5tPcG06WivJlvTT0hA7wMYfCvUG1xCjpprIi__nXFN3sMRf59Gu8dGbsj9b6m_rphG1mkWiWpo6zdGWnQksu3YEubWPbKc9zK_PplCWnQUcVXguE0IO7xY2hgZUdFN1VQ9XT-mY8vfc-a-6dk_L4PfuDEjntJc7IazsisCh8NtYtQbmnYXmhidxhDfSa3PTOMQPeQ","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"about","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"ZxlFA7wsMd-9_No7ms2FJ"}
