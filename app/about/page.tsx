@@ -140,7 +140,8 @@ export default function AboutHeritage() {
             <img
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               alt="Interior of a ultra-modern white laboratory with gold accents and high-end scientific equipment"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEywHZwMLhgVn4AHhVFh6GQMZ6dmMWPjWbT0eNVvY65UzsOgPcQFsSYOoMN2wX6wsrSB_XLv5tPcG06WivJlvTT0hA7wMYfCvUG1xCjpprIi__nXFN3sMRf59Gu8dGbsj9b6m_rphG1mkWiWpo6zdGWnQksu3YEubWPbKc9zK_PplCWnQUcVXguE0IO7xY2hgZUdFN1VQ9XT-mY8vfc-a-6dk_L4PfuDEjntJc7IazsisCh8NtYtQbmnYXmhidxhDfSa3PTOMQPeQ"
+              src="/rohit_5.jpeg"
+
             />
             <div className="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex items-end p-6 sm:p-8">
               <h3 className="font-headline text-xl sm:text-2xl text-white font-bold">Ethical Verification Lab</h3>

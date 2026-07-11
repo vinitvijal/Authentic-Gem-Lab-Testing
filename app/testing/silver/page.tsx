@@ -51,13 +51,13 @@ export default function SilverTesting() {
               </Link>
             </div>
           </div>
-          
+
           <div className="lg:col-span-5 relative w-full max-w-sm sm:max-w-md lg:max-w-none justify-self-center">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10 group border border-outline-variant/15">
               <img
-                className="w-full h-full object-cover grayscale brightness-110 group-hover:scale-103 transition-transform duration-500"
+                className="w-full h-full object-cover brightness-110 group-hover:scale-103 transition-transform duration-500"
                 alt="Macro shot of a pure silver bar under bright clinical laboratory lighting"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfYXvEginFk6RPPZS0f2gdrSdzgc_ID1HeUISfFW7utS71PLU8c0XOVeS_3D1WobGtAdGWPIr5gVJdLwFSuuh0ACapx3jA51E_tYo8wgrg2-Q2lJxw4uSi44Oq7FKScvs6VMRcb1R363MsmqlcIniuM7rM9BnDe6mM0ZJqmNFXrjowzyP8ePHFfpJqTcv46J-h7qzGdP1dNT423hS0CDhwh0ETU2LN4FyVlW3P7RwdsSKNKMzmFddrmqlnIj5O25dKhaU3QaJgRpM"
+                src="/rohit_8.jpeg"
               />
             </div>
             {/* Decorative Alchemy Mandala Element */}
@@ -179,7 +179,7 @@ export default function SilverTesting() {
                 </p>
               </div>
             </div>
-            
+
             <div className="flex gap-6 items-start">
               <span className="text-3xl sm:text-4xl font-headline font-bold text-outline-variant/40">02</span>
               <div>
@@ -200,7 +200,7 @@ export default function SilverTesting() {
               </div>
             </div>
           </div>
-          
+
           <div className="flex-1 order-1 lg:order-2 relative w-full max-w-sm sm:max-w-md lg:max-w-none justify-self-center">
             <div className="relative z-10 p-4 bg-white shadow-2xl rounded-2xl rotate-3 transform border border-outline-variant/10">
               <img
