@@ -39,3 +39,27 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+node_modules/
+.next/
+.env
+.env.*
+.DS_Store
+
+android/
+ios/
+.gradle/
+.expo/
+
+# Metro Bundler Cache
+.expo/web/
+.expo/assets/
+.expo/cache/
+.expo/web-build/
+.expo/packager-cache/
+.expo/node_modules/
+
+# React Native cache
+/.react-native/
+.react-native-cache/
