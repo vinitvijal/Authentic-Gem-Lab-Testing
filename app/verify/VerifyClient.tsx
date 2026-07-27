@@ -1,96 +1,41 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
-interface MockReport {
-  id: string;
-  category: string;
-  purity: string;
-  weight: string;
-  date: string;
-  result: string;
-  comments: string;
-  imageUrl: string;
+
+interface Verification {
+  success: Boolean,
+  id?: string,
+  imageUrl?: string,
+  error?: string
 }
-
-const mockDatabase: Record<string, MockReport> = {
-  "AGL-101-GOLD": {
-    id: "AGL-101-GOLD",
-    category: "Gold Bullion (24 Karat)",
-    purity: "99.99% Fine Gold (Verified)",
-    weight: "100.00 Grams",
-    date: "June 12, 2026",
-    result: "Genuine Gold (ISO 11426 Certified)",
-    comments: "No core inclusions detected. Zero density anomalies.",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuB6QJImibVarRNcYE0dl3D3ViBeuDH-vM_CmUjh6Ylf3wLgcGejKhtmqNlh2HnyaT41MFeZQpIhaSWj5rR8mshmlPqhkRaTYwYltKNL4yBIxJoE73Ee9rUdzq3YpQdk8f9NAaI9wgKOzA4EM8vxBMVIAOaXqoxH3xIaP7EHHS4gab4KQ972mfJB78uKEcXYyph0301TaBMZWmFwXGOlH9vvgKpt9kn8qpakV170PrYf6IAkt--q2Qno95LgQ8LxUPodEYFgHidulF8",
-  },
-  "AGL-202-DIAMOND": {
-    id: "AGL-202-DIAMOND",
-    category: "Natural Diamond (Brilliant Cut)",
-    purity: "VVS1 Clarity, E Color, Excellent Cut",
-    weight: "1.24 Carats",
-    date: "June 18, 2026",
-    result: "Natural Origin (No CVD/HPHT Treatment)",
-    comments: "Microscopic carbon pinpoints present on the pavilion. Girdle laser inscribed.",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuAzVESq-pCl3YLMX2o1c8VPc2lr8TgdkmCHr-Cnucqq4KpdI-t6l3v_LCAuhbPwN8ie0xWVTKAog1aAXILDS7MOD8iIGts4sulYWOGDozMtNbImzZzz449MB-RRhQIZwStJ7vIXNHVxPJ6OSgbJ5EmUOckrEa4dgoVnnfe3yVexLB7r1g0szJuasJaU6Vv__TDZR0EfT6AOjW13rJa-NskngAvkFo1ngBkLGzQtn7Jhgg9Y84VMntMLDKaab253DDX1xnZx13kq9CA",
-  },
-  "AGL-303-Rudraksha": {
-    id: "AGL-303-Rudraksha",
-    category: "14 Mukhi Rudraksha (Dev Mani)",
-    purity: "14 Chambers Verified via Radiography",
-    weight: "3.42 Grams",
-    date: "June 25, 2026",
-    result: "Authentic Elaeocarpus ganitrus seed",
-    comments: "X-Ray imaging confirms 14 symmetric seed chambers. Specific gravity density matches botanical standards.",
-    imageUrl: "/images/Rudraksha-testing.png",
-  },
-  "AGL-404-EMERALD": {
-    id: "AGL-404-EMERALD",
-    category: "Natural Emerald (Octagonal Step Cut)",
-    purity: "Moderate Clarity, Rich Green Color",
-    weight: "2.10 Carats",
-    date: "June 20, 2026",
-    result: "Natural Origin, Colombian Origin",
-    comments: "Minor fracture filling with natural cedar oil detected. No synthetic dyes.",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBTZTLY3hDqVj1ImxKmm1WIK444jDLXUH8172p8VpFFWBL2EMBNlr-bC1j5cSk2Jhru1GeBFsziXATK7VZbJF7lebOjmUtCVi_1HcjQgTs_Il2-qJtPT825ysP060vR5yzLN2AKPViscsA1Ss75iRWumGX58iiA657Y7GxSmoxvNHhBkLk8CWDUyx0qvkNEAes9NL2k7VvhFocLWFCrgv5h4AUE_Cxut0Gd-Wl5rFqmQ4WuTZOPY47M8RZJtJFJYcOP9vWQZMQIg_w",
-  },
-};
 
 export default function VerifyClient() {
   const [reportId, setReportId] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [report, setReport] = useState<MockReport | null>(null);
+  const [report, setReport] = useState<Verification | null>(null);
   const [searched, setSearched] = useState(false);
 
-  const handleVerify = (e: React.FormEvent) => {
+  const handleVerify = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!reportId.trim()) return;
+    console.log(reportId)
 
     setIsLoading(true);
     setReport(null);
     setSearched(true);
 
-    // Fake API Latency (1.5 seconds)
-    setTimeout(() => {
-      const formattedId = reportId.trim().toUpperCase();
-      if (mockDatabase[formattedId]) {
-        setReport(mockDatabase[formattedId]);
-      } else {
-        // Generate a dynamic fallback report for user input so the API flow always displays feedback
-        setReport({
-          id: formattedId,
-          category: "Certified Specimen (Custom Registry)",
-          purity: "Verified Purity / Grade Compliant",
-          weight: "Tested / Logged in Database",
-          date: new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }),
-          result: "Authentic & Verified under AGL Guidelines",
-          comments: "Assayed using standard non-destructive protocols. Database match confirmed.",
-          imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDeMpQIll74JNTRd9ykbncybHTwz5IfqXyTPmT_uNhkFvC-wn6pGvuVi9KduqvwzB9Zftd2pi5QTKUouxMnTrZedpjBXHwjgSbg_HqgMvCNKAlCqrGg00UF51WzYzrrUJzj63fEqKXaGTYTLV5jDZWVuOj174frTp0zBqScDSSdP0eq3-wB-nUIJB5JDNg5RJiow99hRilydtHOlmpsi-Z7EqgWzwxegptLUP8n6zR20_oDJYsduZB6gnhCFRP9d7VaT2wUbUCizDM",
-        });
-      }
-      setIsLoading(false);
-    }, 1500);
+    const res = await fetch(process.env.NEXT_PUBLIC_BACKEND_URL + "/api/verify/" + reportId)
+    const data: Verification = await res.json();
+
+    if (data.success && data.imageUrl) {
+      setReport(data);
+    } else {
+      alert("Invalid Certificate ID")
+    }
+    setIsLoading(false);
+    setSearched(true);
+
   };
 
   return (
@@ -165,7 +110,7 @@ export default function VerifyClient() {
               <div className="bg-primary/5 px-6 py-4 border-b border-outline-variant/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                 <div>
                   <span className="text-[10px] font-label font-bold uppercase tracking-widest text-primary block">AGL Official Registry Record</span>
-                  <span className="font-mono font-bold text-on-surface text-base">{report.id}</span>
+                  <span className="font-mono font-bold text-on-surface text-base uppercase">{report.id}</span>
                 </div>
                 <div className="flex items-center gap-1.5 px-3 py-1 bg-green-50 text-green-700 rounded-full font-label text-[10px] font-bold uppercase tracking-widest border border-green-200">
                   <span className="material-symbols-outlined text-sm">check_circle</span>
@@ -173,43 +118,17 @@ export default function VerifyClient() {
                 </div>
               </div>
 
-              <div className="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                {/* Certificate Details */}
-                <div className="space-y-4 font-body text-sm">
-                  <div className="pb-3 border-b border-outline-variant/10">
-                    <span className="text-stone-500 text-xs block">Specimen Category</span>
-                    <span className="font-semibold text-on-surface">{report.category}</span>
-                  </div>
-                  <div className="pb-3 border-b border-outline-variant/10">
-                    <span className="text-stone-500 text-xs block">Assay Purity / Quality Grade</span>
-                    <span className="font-semibold text-primary">{report.purity}</span>
-                  </div>
-                  <div className="pb-3 border-b border-outline-variant/10">
-                    <span className="text-stone-500 text-xs block">Official Weight</span>
-                    <span className="font-semibold text-on-surface">{report.weight}</span>
-                  </div>
-                  <div className="pb-3 border-b border-outline-variant/10">
-                    <span className="text-stone-500 text-xs block">Date of Certification</span>
-                    <span className="font-semibold text-on-surface">{report.date}</span>
-                  </div>
-                  <div>
-                    <span className="text-stone-500 text-xs block">Laboratory Comments</span>
-                    <p className="text-secondary text-xs leading-relaxed mt-1">{report.comments}</p>
-                  </div>
-                </div>
+              <div className="p-6 sm:p-8 grid grid-cols-1 gap-8 items-center">
 
                 {/* Specimen Response Image */}
-                <div className="space-y-4">
-                  <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow border border-outline-variant/15 relative bg-background flex items-center justify-center">
+                <div className="space-y-4 flex justify-center items-center">
+                  <div className=" rounded-2xl aspect-auto overflow-hidden shadow border border-outline-variant/15 relative bg-background flex items-center justify-center">
                     <img
-                      src={report.imageUrl}
+                      src={process.env.NEXT_PUBLIC_BACKEND_URL as string + report.imageUrl}
                       alt="Verified specimen registry"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full  object-cover"
                     />
                   </div>
-                  <p className="text-[10px] text-stone-500 text-center font-body italic leading-normal">
-                    Photograph of specimen submitted and archived on {report.date}
-                  </p>
                 </div>
               </div>
             </div>
