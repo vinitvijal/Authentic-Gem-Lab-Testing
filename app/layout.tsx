@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import IonicProvider from "./components/IonicProvider";
 import BottomNavigation from "./components/BottomNavigation";
+import AppGate from "./components/AppGate";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://authenticgemlab.com"),
@@ -38,10 +39,12 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-background text-on-surface font-body">
         <IonicProvider>
-          <Header />
-          <main className="flex-grow px-4 md:px-0 pt-[calc(3.5rem+env(safe-area-inset-top,0px))] md:pt-20 pb-[calc(60px+env(safe-area-inset-bottom,0px))] md:pb-0">{children}</main>
-          <Footer />
-          <BottomNavigation />
+          <AppGate>
+            <Header />
+            <main className="flex-grow px-4 md:px-0 pt-[calc(3.5rem+env(safe-area-inset-top,0px))] md:pt-20 pb-[calc(60px+env(safe-area-inset-bottom,0px))] md:pb-0">{children}</main>
+            <Footer />
+            <BottomNavigation />
+          </AppGate>
         </IonicProvider>
       </body>
     </html>
