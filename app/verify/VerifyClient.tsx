@@ -25,7 +25,7 @@ export default function VerifyClient() {
     setReport(null);
     setSearched(true);
 
-    const res = await fetch(process.env.NEXT_PUBLIC_BACKEND_URL + "/api/verify/" + reportId)
+    const res = await fetch("https://agl-admin.authenticgemlab.workers.dev" + "/api/verify/" + reportId)
     const data: Verification = await res.json();
 
     if (data.success && data.imageUrl) {
@@ -124,7 +124,7 @@ export default function VerifyClient() {
                 <div className="space-y-4 flex justify-center items-center">
                   <div className=" rounded-2xl aspect-auto overflow-hidden shadow border border-outline-variant/15 relative bg-background flex items-center justify-center">
                     <img
-                      src={process.env.NEXT_PUBLIC_BACKEND_URL as string + report.imageUrl}
+                      src={"https://agl-admin.authenticgemlab.workers.dev" + report.imageUrl}
                       alt="Verified specimen registry"
                       className="w-full h-full  object-cover"
                     />
